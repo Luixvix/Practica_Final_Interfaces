@@ -35,7 +35,7 @@
         </div>
     </header>
 
-    <section>
+    <section class="row seccion-galeria">
         <div id="gallery" style="display:none;">
             <a href="#">
                 <img alt="Lemon Slice" src="images/borderlands-logo.png" data-image="images/borderlands-logo.png" data-description="This is a Lemon Slice" style="display:none">
@@ -66,24 +66,24 @@
             </a>
         </div>
         <script type="text/javascript">
+            jQuery(document).ready(function () {
 
-		jQuery(document).ready(function(){
+                jQuery("#gallery").unitegallery({
+                    tiles_type: "justified",
+                    tile_enable_icons: true,
+                    //tile_show_link_icon: true,
+                    tile_enable_textpanel: true,
+                    tile_textpanel_source: "title",
+                    tile_textpanel_appear_type: "slide",
+                    tile_textpanel_position: "inside_bottom",
+                    tile_textpanel_offset: 0,
+                    theme_gallery_padding: 20,
+                    tiles_justified_space_between: 20,
+                    tiles_justified_row_height: 300
+                });
 
-			jQuery("#gallery").unitegallery({
-				tiles_type:"justified",
-				tile_border_color:"#F0F0F0",
-				tile_outline_color:"#8B8B8B",
-				tile_enable_shadow:true,
-				tile_shadow_color:"#8B8B8B",
-				tile_show_link_icon:true,
-				lightbox_textpanel_title_color:"e5e5e5",
-				theme_gallery_padding:20,
-				tiles_justified_space_between:20,
-				tiles_justified_row_height:300					});
-
-		});
-
-	</script>
+            });
+        </script>
     </section>
 
     <section class="seccion-footer">
