@@ -13,7 +13,6 @@ html {
     font-size: 20px;
     font-weight: 300;
     text-rendering: optimizeLegibility;
-    height: 100%;
     margin: 0;
 }
 
@@ -72,74 +71,50 @@ html {
     margin: 0 4%;
 }
 
-.menu {
-    float: left;
-    padding: 2% 2%;
-}
-
-.menu-options {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.51));
-}
-
-.menu-boton {
-    border-style: hidden dotted hidden hidden;
-}
-
-.menu-boton:first-child {
-    border-style: hidden dotted hidden dotted;
-}
-
-
 /*Header*/
 
 .cabecera {
-    font-size: 200%;
     text-align: left;
     display: block;
-    background-image: radial-gradient(rgba(0, 0, 0, 0.44), rgb(0, 0, 0)), url(../images/fondo-cabecera.jpg);
-    background-position: top;
-    background-size: cover;
+    background-color: black;
+
 }
 
-
-/*.cabecera img{
+.cabecera h1{
+    font-size: 125%;
+    margin: 5px;
     float: left;
-    height: 150px;
-    width: auto;
-    margin: 3% 5% 3% 5%;
 }
-/*menu*/
-
-.cabecera li {
-    display: block;
-    margin: 2% 10% 2% 10%;
-    text-align: center;
-    line-height: 120%;
-    vertical-align: middle;
+.cabecera i{
+    margin: 10px 5px 10px 5px;
+    font-size: 140%;
+    float: left;
 }
 
-.cabecera li a:link,
-.cabecera li a:visited {
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 50%;
-    color: #ffa804;
-    border-bottom: 2px solid transparent;
-    transition: border-bottom 0.2s;
-    padding: 5px 0;
+.cabecera input {
+    max-height: 22px;
+    width: 50%;
+    font-size: 80%;
+    margin: 15px 5px 10px 5px;
+    float: left;
+    border-radius: 15px;
+    border-style: none;
 }
 
-.cabecera li a:hover,
-.cabecera li a:active {
-    border-bottom: 2px solid #6c0202;
+.cabecera button {
+    font-size: 90%;
+    background-color: #ffa804;
+    border-style: none;
+    border-radius: 5px;
+    width: 70px;
+    height: 25px;
+    margin: 10px;
 }
-
 
 /*Letras*/
 
 h1 {
     font-family: 'Archivo Black', sans-serif;
-    font-size: 200%;
     color: #ffa804;
 }
 
@@ -187,13 +162,12 @@ h2 {
 }
 
 .photo {
-    position: relative;
-    height: 90%;
+    float: left;
+    max-height: 100px;
     /* = 100% - 2*5% padding */
-    width: 100%;
+    max-width: 100px;
     /* = 100% - 2*5% padding */
     padding: 5%;
-    max-height: 250px;
 }
 
 .rs:active {
@@ -216,15 +190,6 @@ h2 {
 
 /*  For responsive images */
 
-.photo .rs {
-    position: relative;
-    float: left;
-    width: auto;
-    height: auto;
-    max-height: 90%;
-    max-width: 100%;
-    padding-bottom: 3%;
-}
 
 .ptext {
     font-weight: 9;
