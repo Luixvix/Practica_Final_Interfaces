@@ -25,7 +25,7 @@
                             <li><a id="mbtn" href="#">Entra</a> </li>
                         </div>
                         <div class="col span-1-of-2 menu-boton">
-                            <li><a href="sing-up.html">Registrate</a> </li>
+                            <li><a id="mbtn-sign" href="#">Registrate</a> </li>
                         </div>
                     </div>
                 </div>
@@ -39,12 +39,12 @@
 <!--*************************************-->
 <!--*************************************-->
 <!--*************************************-->
-<!-- The Modal sign in-->
+<!-- The Modal sign in / register-->
 <div id="myModal" class="modal">
     <!-- Modal content -->
     <div class="modal-content">
         <div class="modal-header clearfix">
-            <p></p> <span class="close">x</span></div>
+            <p></p> <span class="close"></span></div>
             <div class="modal-body">
                 <form class="formulario" action="#" method="post">
                     <p id="usuario-form">
@@ -59,216 +59,43 @@
                     </div>
                 </div>
             </div>
-            <!--*************************************-->
-            <!--*************************************-->
-            <!--*************************************-->
-            <!--*************************************-->
-            <section class="row seccion-fotos">
-                <div class="row">
-                    <div class="col span-1-of-3 pbox">
-                        <div class="photo clearfix"> <img class="rs" src="images/pg_1.png"> </div>
-                        <div class="pfooter clearfix">
-                            <div class="ptittle">
-                                <h3>Screenshot</h3></div>
-                                <div class="picon">
-                                    <button class="share"><i class="ion-android-bookmark"></i></button>
-                                </div>
-                                <div class="picon">
-                                    <button class="comentar"><i class="ion-forward"></i></button>
-                                </div>
-                                <div class="picon">
-                                    <button class="fav"><i class="ion-heart"></i></button>
-                                </div>
+
+<div id="myModal-sign" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+        <div class="modal-header clearfix">
+            <p></p> <span class="close-sign"></span></div>
+            <div class="modal-body">
+                <form class="formulario" action="#" method="post">
+                    <p id="usuario-form">
+                        <label class="etiqueta" for="username">Usuario</label>
+                        <input id="username" name="username" type="text"> </p>
+                        <p id="contraseña-form">
+                            <label class="etiqueta" for="password">Contraseña</label>
+                            <input id="password" name="password" type="password"> </p>
+                            <br>
+                            <button class="rbutton" onclick="bsubmit()" id="register" type="submit">Sign Up</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+
+                        <!--*************************************-->
+                        <!--*************************************-->
+                        <!--*************************************-->
+                        <!--*************************************-->
+                        <!--*************************************-->
+
+                        <section class="row seccion-footer">
+                            <div class="footer"> <a class="footer-link" href="https://opensource.org/licenses/MIT" target="_blank">Copyright</a> <a class="footer-link" href="http://store.steampowered.com/" target="_blank">Steam</a> <a class="footer-link" href="https://www.reddit.com/r/borderlands" target="_blank">Reddit</a>
+                                <p> Derechos Pertenecientes a Gearbox Software. </p>
                             </div>
-                            <div class="textbox"> <a class="expandir">+</a>
-                                <p class="comentarios"></p>
-                                <textarea class="coment"></textarea>
-                                <button class="enviar">Enviar</button>
-                            </div>
-                        </div>
-                        <div class="col span-1-of-3 pbox ">
-                            <div class="photo clearfix"> <img class="rs" src="images/pg_2.jpg"> </div>
-                            <div class="pfooter clearfix">
-                                <div class="ptittle">
-                                    <h3>Screenshot</h3></div>
-                                    <div class="picon">
-                                        <button class="share"><i class="ion-android-bookmark"></i></button>
-                                    </div>
-                                    <div class="picon">
-                                        <button class="comentar"><i class="ion-forward"></i></button>
-                                    </div>
-                                    <div class="picon">
-                                        <button class="fav"><i class="ion-heart"></i></button>
-                                    </div>
-                                </div>
-                                <div class="textbox"> <a class="expandir">+</a>
-                                    <p class="comentarios"></p>
-                                    <textarea class="coment"></textarea>
-                                    <button class="enviar">Enviar</button>
-                                </div>
-                            </div>
-                            <div class="col span-1-of-3 pbox">
-                                <div class="photo clearfix"> <img class="rs" src="images/pg_3.jpg"> </div>
-                                <div class="pfooter clearfix">
-                                    <div class="ptittle">
-                                        <h3>Screenshot</h3></div>
-                                        <div class="picon">
-                                            <button class="share"><i class="ion-android-bookmark"></i></button>
-                                        </div>
-                                        <div class="picon">
-                                            <button class="comentar"><i class="ion-forward"></i></button>
-                                        </div>
-                                        <div class="picon">
-                                            <button class="fav"><i class="ion-heart"></i></button>
-                                        </div>
-                                    </div>
-                                    <div class="textbox"> <a class="expandir">+</a>
-                                        <p class="comentarios"></p>
-                                        <textarea class="coment"></textarea>
-                                        <button class="enviar">Enviar</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col span-1-of-3 pbox">
-                                    <div class="photo clearfix"> <img class="rs" src="images/pg_4.jpg"> </div>
-                                    <div class="pfooter clearfix">
-                                        <div class="ptittle">
-                                            <h3>Screenshot</h3></div>
-                                            <div class="picon">
-                                                <button class="share"><i class="ion-android-bookmark"></i></button>
-                                            </div>
-                                            <div class="picon">
-                                                <button class="comentar"><i class="ion-forward"></i></button>
-                                            </div>
-                                            <div class="picon">
-                                                <button class="fav"><i class="ion-heart"></i></button>
-                                            </div>
-                                        </div>
-                                        <div class="textbox"> <a class="expandir">+</a>
-                                            <p class="comentarios"></p>
-                                            <textarea class="coment"></textarea>
-                                            <button class="enviar">Enviar</button>
-                                        </div>
-                                    </div>
-                                    <div class="col span-1-of-3 pbox">
-                                        <div class="photo clearfix"> <img class="rs" src="images/pg_5.jpg"> </div>
-                                        <div class="pfooter clearfix">
-                                            <div class="ptittle">
-                                                <h3>Screenshot</h3></div>
-                                                <div class="picon">
-                                                    <button class="share"><i class="ion-android-bookmark"></i></button>
-                                                </div>
-                                                <div class="picon">
-                                                    <button class="comentar"><i class="ion-forward"></i></button>
-                                                </div>
-                                                <div class="picon">
-                                                    <button class="fav"><i class="ion-heart"></i></button>
-                                                </div>
-                                            </div>
-                                            <div class="textbox"> <a class="expandir">+</a>
-                                                <p class="comentarios"></p>
-                                                <textarea class="coment"></textarea>
-                                                <button class="enviar">Enviar</button>
-                                            </div>
-                                        </div>
-                                        <div class="col span-1-of-3 pbox">
-                                            <div class="photo clearfix"> <img class="rs" src="images/pg_6.jpg"> </div>
-                                            <div class="pfooter clearfix">
-                                                <div class="ptittle">
-                                                    <h3>Screenshot</h3></div>
-                                                    <div class="picon">
-                                                        <button class="share"><i class="ion-android-bookmark"></i></button>
-                                                    </div>
-                                                    <div class="picon">
-                                                        <button class="comentar"><i class="ion-forward"></i></button>
-                                                    </div>
-                                                    <div class="picon">
-                                                        <button class="fav"><i class="ion-heart"></i></button>
-                                                    </div>
-                                                </div>
-                                                <div class="textbox"> <a class="expandir">+</a>
-                                                    <p class="comentarios"></p>
-                                                    <textarea class="coment"></textarea>
-                                                    <button class="enviar">Enviar</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col span-1-of-3 pbox">
-                                                <div class="photo clearfix"> <img class="rs" src="images/pg_7.png"> </div>
-                                                <div class="pfooter clearfix">
-                                                    <div class="ptittle">
-                                                        <h3>Screenshot</h3></div>
-                                                        <div class="picon">
-                                                            <button class="share"><i class="ion-android-bookmark"></i></button>
-                                                        </div>
-                                                        <div class="picon">
-                                                            <button class="comentar"><i class="ion-forward"></i></button>
-                                                        </div>
-                                                        <div class="picon">
-                                                            <button class="fav"><i class="ion-heart"></i></button>
-                                                        </div>
-                                                    </div>
-                                                    <div class="textbox"> <a class="expandir">+</a>
-                                                        <p class="comentarios"></p>
-                                                        <textarea class="coment"></textarea>
-                                                        <button class="enviar">Enviar</button>
-                                                    </div>
-                                                </div>
-                                                <div class="col span-1-of-3 pbox">
-                                                    <div class="photo clearfix"> <img class="rs" src="images/pg_8.jpg"> </div>
-                                                    <div class="pfooter clearfix">
-                                                        <div class="ptittle">
-                                                            <h3>Screenshot</h3></div>
-                                                            <div class="picon">
-                                                                <button class="share"><i class="ion-android-bookmark"></i></button>
-                                                            </div>
-                                                            <div class="picon">
-                                                                <button class="comentar"><i class="ion-forward"></i></button>
-                                                            </div>
-                                                            <div class="picon">
-                                                                <button class="fav"><i class="ion-heart"></i></button>
-                                                            </div>
-                                                        </div>
-                                                        <div class="textbox"> <a class="expandir">+</a>
-                                                            <p class="comentarios"></p>
-                                                            <textarea class="coment"></textarea>
-                                                            <button class="enviar">Enviar</button>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col span-1-of-3 pbox">
-                                                        <div class="photo clearfix"> <img class="rs" src="images/pg_9.jpg"> </div>
-                                                        <div class="pfooter clearfix">
-                                                            <div class="ptittle">
-                                                                <h3>Screenshot</h3></div>
-                                                                <div class="picon">
-                                                                    <button class="share"><i class="ion-android-bookmark"></i></button>
-                                                                </div>
-                                                                <div class="picon">
-                                                                    <button class="comentar"><i class="ion-forward"></i></button>
-                                                                </div>
-                                                                <div class="picon">
-                                                                    <button class="fav"><i class="ion-heart"></i></button>
-                                                                </div>
-                                                            </div>
-                                                            <div class="textbox"> <a class="expandir">+</a>
-                                                                <p class="comentarios"></p>
-                                                                <textarea class="coment"></textarea>
-                                                                <button class="enviar">Enviar</button>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </section>
-                                                <section class="row seccion-footer">
-                                                    <div class="footer"> <a class="footer-link" href="https://opensource.org/licenses/MIT" target="_blank">Copyright</a> <a class="footer-link" href="http://store.steampowered.com/" target="_blank">Steam</a> <a class="footer-link" href="https://www.reddit.com/r/borderlands" target="_blank">Reddit</a>
-                                                        <p> Derechos Pertenecientes a Gearbox Software. </p>
-                                                    </div>
-                                                </section>
-                                            </body>
-                                            <script>
-                                                var favoritos = document.querySelectorAll(".fav");
-                                                for (var i = 0; i < favoritos.length; i++) {
+                        </section>
+                    </body>
+                    <script>
+                        var favoritos = document.querySelectorAll(".fav");
+                        for (var i = 0; i < favoritos.length; i++) {
         // https://developer.mozilla.org/es/docs/Web/API/Element/classList
         favoritos[i].addEventListener("click", function () {
             if (this.firstChild.style.color == "red") {
@@ -338,17 +165,17 @@
     /****************************/
     /****************************/
     /****************************/
-    // Get the modal
+    // Get the modal login
     var modal = document.getElementById('myModal');
-    // Get the button that opens the modal
+    // Get the button that opens the modal login
     var btn = document.getElementById("mbtn");
-    // Get the <span> element that closes the modal
+    // Get the <span> element that closes the modal login
     var span = document.getElementsByClassName("close")[0];
-    // When the user clicks the button, open the modal
+    // When the user clicks the button, open the modal login
     btn.onclick = function () {
         modal.style.display = "block";
     }
-        // When the user clicks on <span> (x), close the modal
+        // When the user clicks on <span> (x), close the modal login
         span.onclick = function () {
             modal.style.display = "none";
         }
@@ -358,8 +185,33 @@
                 modal.style.display = "none";
             }
         }
+        /****************************/   
+        /****************************/
+    // Get the modal sign in
+    var modal_sign = document.getElementById('myModal-sign');
+    // Get the button that opens the modal login
+    var btn_sign = document.getElementById("mbtn-sign");
+    // Get the <span> element that closes the modal login
+    var span_sign = document.getElementsByClassName("close-sign")[0];
+    // When the user clicks the button, open the modal login
+    btn_sign.onclick = function () {
+        modal_sign.style.display = "block";
+    }
+        // When the user clicks on <span> (x), close the modal login
+        span_sign.onclick = function () {
+            modal_sign.style.display = "none";
+        }
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal_sign) {
+                modal_sign.style.display = "none";
+            }
+        }
         /****************************/
         /****************************/
+        
+
+        
         /****************************/
         function bsubmit() {
             if (!$('#password').val()) {
