@@ -175,7 +175,7 @@ h2 {
     height: 250px;
 }
 .content_content {
-    padding-top: 20%;
+    padding-top: 10%;
 }
 .comment {
     float: left;
@@ -187,7 +187,7 @@ h2 {
     background-position: center;
 }
 .comment_content {
-    padding-top: 20%;
+    padding-top: 10%;
 }
 
 .share {
@@ -200,7 +200,7 @@ h2 {
     height: 250px;
 }
 .share_content {
-    padding-top: 20%;
+    padding-top: 10%;
 }
 
 .start_here{
@@ -226,6 +226,10 @@ h2 {
     height: 90px;
     width: 300px;
     margin: 10px;
+}
+.picon {
+    font-size: 50px;
+    padding: 5px;
 }
 /*++++++ fin pagina principal +++++*/
 

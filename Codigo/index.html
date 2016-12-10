@@ -17,8 +17,7 @@
 <body>
     <header>
         <div class="cabecera clearfix">
-            <div class="row">
-                <i class="ion-navicon-round"></i>
+            <div class="row"> <i class="ion-navicon-round"></i>
                 <h1>BORDELANDS</h1>
                 <input class="busqueda"><i class="ion-search"></i></input>
                 <button class="boton">Log In</button>
@@ -26,12 +25,9 @@
             </div>
         </div>
     </header>
-
-
     <!--*************************************-->
     <!--** CONTENIDO DE LA PAGINA ***********-->
-
-    <div class="welcome" >
+    <div class="welcome">
         <div class="welcome_content">
             <h1> WELCOME TO BORDERLANDS </h1>
             <br>
@@ -42,18 +38,18 @@
     </div>
     <div class="content">
         <div class="content_content">
-            <h3>Sube tu contenido</h3>
-        </div>
+            <div class="picon"> <i class="ion-android-cloud-circle"></i></div>
+            <h3>Sube tu contenido</h3> </div>
     </div>
     <div class="comment">
         <div class="comment_content">
-            <h3>Comenta y Valora</h3>
-        </div>
+            <div class="picon"> <i class="ion-ios-star"></i></div>
+            <h3>Comenta y Valora</h3> </div>
     </div>
     <div class="share">
         <div class="share_content">
-            <h3>Comparte</h3>
-        </div>
+            <div class="picon"> <i class="ion-android-share-alt"></i></div>
+            <h3>Comparte</h3> </div>
     </div>
     <div class="start_here">
         <div class="start_here_content">
@@ -67,7 +63,6 @@
     <!--*************************************-->
     <!--*************************************-->
     <!--*************************************-->
-
     <section class="seccion-footer">
         <div class="footer"> <a class="footer-link" href="https://opensource.org/licenses/MIT" target="_blank">Copyright</a> <a class="footer-link" href="http://store.steampowered.com/" target="_blank">Steam</a> <a class="footer-link" href="https://www.reddit.com/r/borderlands" target="_blank">Reddit</a>
             <p> Derechos Pertenecientes a Gearbox Software. </p>
@@ -154,21 +149,21 @@
     var span = document.getElementsByClassName("close")[0];
     // When the user clicks the button, open the modal login
     btn.onclick = function () {
-        modal.style.display = "block";
-    }
+            modal.style.display = "block";
+        }
         // When the user clicks on <span> (x), close the modal login
-        span.onclick = function () {
+    span.onclick = function () {
             modal.style.display = "none";
         }
         // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function (event) {
+    window.onclick = function (event) {
             if (event.target == modal) {
                 modal.style.display = "none";
             }
         }
-        /****************************/   
         /****************************/
-    // Get the modal sign in
+        /****************************/
+        // Get the modal sign in
     var modal_sign = document.getElementById('myModal-sign');
     // Get the button that opens the modal login
     var btn_sign = document.getElementById("mbtn-sign");
@@ -176,102 +171,102 @@
     var span_sign = document.getElementsByClassName("close-sign")[0];
     // When the user clicks the button, open the modal login
     btn_sign.onclick = function () {
-        modal_sign.style.display = "block";
-    }
+            modal_sign.style.display = "block";
+        }
         // When the user clicks on <span> (x), close the modal login
-        span_sign.onclick = function () {
+    span_sign.onclick = function () {
             modal_sign.style.display = "none";
         }
         // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function (event) {
+    window.onclick = function (event) {
             if (event.target == modal_sign) {
                 modal_sign.style.display = "none";
             }
         }
         /****************************/
         /****************************/
-        
-
-        
         /****************************/
-        function bsubmit() {
-            if (!$('#password').val()) {
-                $('#password').css("background", "red");
-                $('#register').css("background", "red");
-                $("#register").prop("disabled", true);
-            }else{
-                $('#password').css("background", "#e8eeef");
-                $('#register').css("background", "#ffa804");
-                $("#register").prop("disabled", false);
-            }
-            if (!$('#username').val()) {
-                $('#username').css("background", "red");
-                $('#register').css("background", "red");
-                $("#register").prop("disabled", true);
-            }else{
-                $('#username').css("background", "#e8eeef");
-                $('#register').css("background", "#ffa804");
-                $("#register").prop("disabled", false);
-            }
-            var c = document.cookie;
-            alert(c);
+    function bsubmit() {
+        if (!$('#password').val()) {
+            $('#password').css("background", "red");
+            $('#register').css("background", "red");
+            $("#register").prop("disabled", true);
+        }
+        else {
+            $('#password').css("background", "#e8eeef");
+            $('#register').css("background", "#ffa804");
+            $("#register").prop("disabled", false);
+        }
+        if (!$('#username').val()) {
+            $('#username').css("background", "red");
+            $('#register').css("background", "red");
+            $("#register").prop("disabled", true);
+        }
+        else {
+            $('#username').css("background", "#e8eeef");
+            $('#register').css("background", "#ffa804");
+            $("#register").prop("disabled", false);
+        }
+        var c = document.cookie;
+        alert(c);
+    };
 
-        };
+    function getCookieName(cname) {
+        var name = cname + "=";
+        var ca = document.cookie.split(';');
+        for (var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') {
+                c = c.substring(1);
+            }
+            if (c.indexOf(name) == 0) {
+                return c.substring(name.length, c.length);
+            }
+        }
+        return "";
+    };
 
-        function getCookieName(cname) {
-            var name = cname + "=";
-            var ca = document.cookie.split(';');
-            for (var i = 0; i < ca.length; i++) {
-                var c = ca[i];
-                while (c.charAt(0) == ' ') {
-                    c = c.substring(1);
-                }
-                if (c.indexOf(name) == 0) {
-                    return c.substring(name.length, c.length);
-                }
+    function getCookiePass(cpass) {
+        var password = cpass + "=";
+        var ca = document.cookie.split(';');
+        for (var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') {
+                c = c.substring(1);
             }
-            return "";
-        };
-        function getCookiePass(cpass) {
-            var password = cpass + "=";
-            var ca = document.cookie.split(';');
-            for (var i = 0; i < ca.length; i++) {
-                var c = ca[i];
-                while (c.charAt(0) == ' ') {
-                    c = c.substring(1);
-                }
-                if (c.indexOf(password) == 0) {
-                    return c.substring(password.length, c.length);
-                }
+            if (c.indexOf(password) == 0) {
+                return c.substring(password.length, c.length);
             }
-            return "";
-        };
+        }
+        return "";
+    };
+    $('#username').focusout(function () {
+        if (!$('#username').val()) {
+            $('#username').css("background", "red");
+            $('#register').css("background", "red");
+            $("#register").prop("disabled", true);
+        }
+        else {
+            $('#username').css("background", "#e8eeef");
+            $('#register').css("background", "#ffa804");
+            $("#register").prop("disabled", false);
+        }
+    });
+    $('#password').focusout(function () {
+        if (!$('#password').val()) {
+            $('#password').css("background", "red");
+            $('#register').css("background", "red");
+            $("#register").prop("disabled", true);
+        }
+        else {
+            $('#password').css("background", "#e8eeef");
+            $('#register').css("background", "#ffa804");
+            $("#register").prop("disabled", false);
+        }
+    });
+</script>
 
-        $('#username').focusout(function () {
-            if (!$('#username').val()) {
-                $('#username').css("background", "red");
-                $('#register').css("background", "red");
-                $("#register").prop("disabled", true);
-            }else{
-                $('#username').css("background", "#e8eeef");
-                $('#register').css("background", "#ffa804");
-                $("#register").prop("disabled", false);
-            }
-        });
-        $('#password').focusout(function () {
-            if (!$('#password').val()) {
-                $('#password').css("background", "red");
-                $('#register').css("background", "red");
-                $("#register").prop("disabled", true);
-            }else{
-                $('#password').css("background", "#e8eeef");
-                $('#register').css("background", "#ffa804");
-                $("#register").prop("disabled", false);
-            }
-        });
-    </script>
-
-    </html>
+</html>
 <!--
 
 -->
