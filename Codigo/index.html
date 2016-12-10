@@ -16,86 +16,33 @@
 
 <body>
     <header>
-        <div class="row cabecera">
-            <h1>BORDELANDS</h1>
-            <nav>
-                <div class="menu-cabecera">
-                    <div class="col span-1-of-3 menu-options">
-                        <div class="col span-1-of-2 menu-boton">
-                            <li><a id="mbtn" href="#">Entra</a> </li>
-                        </div>
-                        <div class="col span-1-of-2 menu-boton">
-                            <li><a id="mbtn-sign" href="#">Registrate</a> </li>
-                        </div>
-                    </div>
-                </div>
+        <div class="cabecera clearfix">
+            <div class="row">
+                <i class="ion-navicon-round"></i>
+                <h1>BORDELANDS</h1>
+                <input class="busqueda"><i class="ion-search"></i></input>
+                <button class="boton">Log In</button>
+                <button class="boton">Sign In</button>
             </div>
-        </nav>
-    </div>
-</header>
-<!--*************************************-->
-<!--*************************************-->
-<!--*************************************-->
-<!--*************************************-->
-<!--*************************************-->
-<!--*************************************-->
-<!-- The Modal sign in / register-->
-<div id="myModal" class="modal">
-    <!-- Modal content -->
-    <div class="modal-content">
-        <div class="modal-header clearfix">
-            <p></p> <span class="close"></span></div>
-            <div class="modal-body">
-                <form class="formulario" action="#" method="post">
-                    <p id="usuario-form">
-                        <label class="etiqueta" for="username">Usuario</label>
-                        <input id="username" name="username" type="text"> </p>
-                        <p id="contraseña-form">
-                            <label class="etiqueta" for="password">Contraseña</label>
-                            <input id="password" name="password" type="password"> </p>
-                            <br>
-                            <button class="rbutton" onclick="bsubmit()" id="register" type="submit">Sign Up</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-
-<div id="myModal-sign" class="modal">
-    <!-- Modal content -->
-    <div class="modal-content">
-        <div class="modal-header clearfix">
-            <p></p> <span class="close-sign"></span></div>
-            <div class="modal-body">
-                <form class="formulario" action="#" method="post">
-                    <p id="usuario-form">
-                        <label class="etiqueta" for="username">Usuario</label>
-                        <input id="username" name="username" type="text"> </p>
-                        <p id="contraseña-form">
-                            <label class="etiqueta" for="password">Contraseña</label>
-                            <input id="password" name="password" type="password"> </p>
-                            <br>
-                            <button class="rbutton" onclick="bsubmit()" id="register" type="submit">Sign Up</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
+        </div>
+    </header>
 
 
-                        <!--*************************************-->
-                        <!--*************************************-->
-                        <!--*************************************-->
-                        <!--*************************************-->
-                        <!--*************************************-->
+    <!--*************************************-->
+    <!--*************************************-->
+    <!--*************************************-->
+    <!--*************************************-->
+    <!--*************************************-->
 
-                        <section class="row seccion-footer">
-                            <div class="footer"> <a class="footer-link" href="https://opensource.org/licenses/MIT" target="_blank">Copyright</a> <a class="footer-link" href="http://store.steampowered.com/" target="_blank">Steam</a> <a class="footer-link" href="https://www.reddit.com/r/borderlands" target="_blank">Reddit</a>
-                                <p> Derechos Pertenecientes a Gearbox Software. </p>
-                            </div>
-                        </section>
-                    </body>
-                    <script>
-                        var favoritos = document.querySelectorAll(".fav");
-                        for (var i = 0; i < favoritos.length; i++) {
+    <section class="row seccion-footer">
+        <div class="footer"> <a class="footer-link" href="https://opensource.org/licenses/MIT" target="_blank">Copyright</a> <a class="footer-link" href="http://store.steampowered.com/" target="_blank">Steam</a> <a class="footer-link" href="https://www.reddit.com/r/borderlands" target="_blank">Reddit</a>
+            <p> Derechos Pertenecientes a Gearbox Software. </p>
+        </div>
+    </section>
+</body>
+<script>
+    var favoritos = document.querySelectorAll(".fav");
+    for (var i = 0; i < favoritos.length; i++) {
         // https://developer.mozilla.org/es/docs/Web/API/Element/classList
         favoritos[i].addEventListener("click", function () {
             if (this.firstChild.style.color == "red") {
