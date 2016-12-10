@@ -754,3 +754,133 @@ legend{
     background-color: #ffa804;
     border: 1px solid #1e1e1e;
 }
+
+
+/*inicio estilos ventana modal login y registro*/
+.ventanaLogin{
+    display: none;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 0px 10px 5px #000;
+}
+.ventanaLogin form{
+    background-color: transparent;
+}
+.ventanaLogin input{
+    margin: 0 auto;
+    display: block;
+}
+#enviarDatosLogin{
+    width auto;
+    cursor: pointer;
+}
+.containerVentanaLogin{
+    padding: 30px;
+    background-color: #1E1E1E;
+    position: absolute;
+    /* width: 500px; */
+    top: calc((100% - 246px) / 2);
+    left: calc((100% - 500px) / 2);
+}
+#iconoCerrarModalLogin{
+    width: 25px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+#botonEntrar{
+    cursor: pointer;
+}
+#formularioInicioSesion label, #formularioInicioSesion input{
+    float: left;
+    width: 200px;
+    padding: 5px;
+}
+#formularioInicioSesion input[type=submit]{
+    float: right;
+    background-color: #ffa804;
+    border: 0;
+}
+
+
+.ventanaRegistro{
+    display: none;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 0px 10px 5px #000;
+}
+.ventanaRegistro form{
+    background-color: transparent;
+}
+.ventanaRegistro input{
+    margin: 0 auto;
+    display: block;
+}
+#enviarDatosRegistro{
+    width auto;
+}
+.containerVentanaRegistro{
+    padding: 30px;
+    background-color: #1E1E1E;
+    position: absolute;
+    /* width: 500px; */
+    top: 10%;
+    top: calc((100% - 352px) / 2);
+    left: calc((100% - 600px) / 2);
+    overflow: auto;
+}
+#iconoCerrarModalRegistro{
+    width: 25px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+#botonRegistrar{
+    cursor: pointer;
+}
+#formularioRegistro label, #formularioRegistro input{
+    float: left;
+    width: 200px;
+    padding: 5px;
+}
+#formularioRegistro label{
+    width: 300px;
+}
+#formularioRegistro input[type=submit]{
+    float: right;
+    background-color: #ffa804;
+    border: 0;
+    width: 100px;
+}
+#formularioRegistro input[type=checkbox]{
+    width: auto;
+    margin-top: 5px;
+}
+.errorRegistro{
+    display: none;
+    background-color: #FF0000;
+    margin-bottom: 15px;
+    color: #FFF;
+    padding: 5px;
+}
+.condicionesRegistro{
+    font-size: 12px;
+    float: left;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.ocultarUsuario{
+    display: none;
+}
+/*fin estilos ventana modal login y registro*/
