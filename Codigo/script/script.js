@@ -1,15 +1,13 @@
 $(document).ready(function () {
-    $('.ocultarUsuario').css({
-        "display": "none"
-    });
+    $('.ocultarUsuario').css({"display":"none"});
     abrirCerrarModalLogin();
     abrirCerrarModalRegistro();
     enviarDatosInicioSesion();
     chechCamposRegistro();
     like();
-    menu();
     anadirAmigo();
     share();
+    enviarComentarios();
     //setCookie('admin','admin1234',2);
     //alert(getCookie('hola'));
 
@@ -37,14 +35,10 @@ function abrirCerrarModalRegistro() {
 
 function enviarDatosInicioSesion() {
     $('#enviarDatosLogin').click(function () {
-        // alert($('#nombreUsuario').val());
-        // alert($('#passUsuario').val());
-        var estado = checkCookie($('#nombreUsuario').val(), $('#passUsuario').val());
+       var estado = checkCookie($('#nombreUsuario').val(), $('#passUsuario').val());
         if (estado == true) {
             //$('#textoNombreUsuario').text("Bienvenid@ " + $('#nombreUsuario').val());
-            $('.ocultarUsuario').css({
-                "display": "inline-block"
-            });
+            $('.ocultarUsuario').css({"display":"inline-block"});
             $('#botonEntrar').hide();
             $('#botonRegistrar').hide();
             $('.ventanaLogin').fadeOut();
@@ -122,26 +116,18 @@ function chechCamposRegistro() {
 
     });
 }
-
-function like() {
-    $(".fav").click(function () {
+function like(){
+$(".fav").click(function() {
         if (this.firstChild.style.color == "red") {
-
-            console.log("hola");
             this.firstChild.style.color = "#ffa804";
         } else {
-            console.log("adios");
-
-            this.firstChild.style.color = "#ffa804";
-        } else {
-
             this.firstChild.style.color = "red";
         }
     });
 }
 
-function anadirAmigo() {
-    $(".amigoNuevo").click(function () {
+function anadirAmigo(){
+    $(".amigoNuevo").click(function() {
 
         if ($(".amigoNuevo span").html() == "Cancelar Solicitud") {
             $(".amigoNuevo span").html("Añadir amigo");
@@ -153,6 +139,15 @@ function anadirAmigo() {
             $(".amigoNuevo i").addClass("ion-close");
         }
 
+    });
+    $(".amigoNuevoSin").click(function() {
+         if ($(".amigoNuevoSin i").hasClass("ion-person-add")) {
+            $(".amigoNuevoSin i").addClass("ion-close");
+             $(".amigoNuevoSin i").removeClass("ion-person-add");
+        } else {
+            $(".amigoNuevoSin i").removeClass("ion-close");
+            $(".amigoNuevoSin i").addClass("ion-person-add");
+        }
 
     });
 }
@@ -188,7 +183,22 @@ function menu() {
 }
 
 function share(){
-	$('.iconshare').click(function(){
-		alert("La imagen ha sido compartida");
-	});
+    $('.iconshare').click(function(){
+        alert("La imagen ha sido compartida");
+    });
+}
+
+function enviarComentarios(){
+    $('#botonEnviarComentario').click(function(){
+        var estado = checkCookie($('#nombreUsuario').val(), $('#passUsuario').val());
+        if(estado == false){
+            alert("Debe estar registrado para comentar");
+        } else{
+        var comentario = $("#cajaTextoComentario").val();
+        var usuario = $('#nombreUsuario').val();
+        $("#cargarComentarios").append('<div class="comentario-contenedor"><div class="comentario-texto">'+comentario+'</div><div class="comentario-username">'+usuario+'</div></div>');
+        $("#cajaTextoComentario").val("");
+        }
+    });
+
 }
