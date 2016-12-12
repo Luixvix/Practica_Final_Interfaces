@@ -1,10 +1,13 @@
 $(document).ready(function () {
-    $('.ocultarUsuario').css({"display":"none"});
+    $('.ocultarUsuario').css({
+        "display": "none"
+    });
     abrirCerrarModalLogin();
     abrirCerrarModalRegistro();
     enviarDatosInicioSesion();
     chechCamposRegistro();
     like();
+    menu();
     //setCookie('admin','admin1234',2);
     //alert(getCookie('hola'));
 
@@ -37,7 +40,9 @@ function enviarDatosInicioSesion() {
         var estado = checkCookie($('#nombreUsuario').val(), $('#passUsuario').val());
         if (estado == true) {
             //$('#textoNombreUsuario').text("Bienvenid@ " + $('#nombreUsuario').val());
-            $('.ocultarUsuario').css({"display":"inline-block"});
+            $('.ocultarUsuario').css({
+                "display": "inline-block"
+            });
             $('#botonEntrar').hide();
             $('#botonRegistrar').hide();
             $('.ventanaLogin').fadeOut();
@@ -115,14 +120,34 @@ function chechCamposRegistro() {
 
     });
 }
-function like(){
-$(".fav").click(function() {
+
+function like() {
+    $(".fav").click(function () {
         if (this.firstChild.style.color == "red") {
-                    console.log("hola");
+            console.log("hola");
             this.firstChild.style.color = "#ffa804";
         } else {
-                console.log("adios");
+            console.log("adios");
             this.firstChild.style.color = "red";
         }
+    });
+}
+
+function menu() {
+    $(document).ready(function () {
+        var menu = $('.menu');
+
+        $(touch).on('click', function (e) {
+            e.preventDefault();
+            menu.slideToggle();
+        });
+
+        $(window).resize(function () {
+            var w = $(window).width();
+            if (w > 767 && menu.is(':hidden')) {
+                menu.removeAttr('style');
+            }
+        });
+
     });
 }
