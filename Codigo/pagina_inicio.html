@@ -11,6 +11,7 @@
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="script/js.cookie.js"></script>
+    <script src="script/script.js"></script>
     <title>Borderlands Fanpage</title>
 </head>
 
@@ -20,8 +21,8 @@
             <div class="row"> <i class="ion-navicon-round"></i>
                 <h1>BORDELANDS</h1>
                 <input class="busqueda"><i class="ion-search"></i></input>
-                <button class="boton">Log In</button>
-                <button class="boton">Sign In</button>
+                <button class="boton" id="botonEntrar">Log In</button>
+                <button class="boton" id="botonRegistrar">Sign In</button>
             </div>
         </div>
     </header>
@@ -61,6 +62,63 @@
                 <button class="boton">Descubre</button>
             </div>
         </div>
+        <div class="ventanaLogin">
+                <div class="containerVentanaLogin">
+                    <div style="margin-bottom: 15px; text-align: center;">
+                        <span style="font-size: 20px;">Iniciar Sesión</span>
+                    </div>
+                    <form action="javascript: void(0);" id="formularioInicioSesion" method="POST">
+                        <div style="margin-bottom: 15px;">
+                            <div class="clearfix">
+                                <label>Nombre de usuario</label>
+                                <input type="text" name="nombreUsuario" id="nombreUsuario" style="margin-bottom: 5px;"/>
+                            </div>
+                            <div class="clearfix">
+                                <label>Contraseña</label>
+                                <input type="password" name="passUsuario" id="passUsuario"/>
+                            </div>
+                        </div>
+                        <div>
+                            <input id="enviarDatosLogin" type="submit" value="Entrar" />
+                        </div>
+                    </form>
+                    <img id="iconoCerrarModalLogin" src="images/close.svg">
+                </div>
+            </div>
+            <div class="ventanaRegistro">
+                <div class="containerVentanaRegistro">
+                    <div style="margin-bottom: 15px; text-align: center;">
+                        <span style="font-size: 20px;">Registrate</span>
+                    </div>
+                    <form action="javascript: void(0);" id="formularioRegistro" method="POST">
+                        <div style="margin-bottom: 15px;">
+                                <div class="clearfix">
+                                    <label>Nombre de usuario</label>
+                                    <input type="text" required name="nombreUsuarioRegistro" id="nombreUsuarioRegistro"/>
+                                </div>
+                                <div class="clearfix">
+                                    <label>Email</label>
+                                    <input type="email" required name="emailRegistro" id="emailRegistro"/>
+                                </div>
+                                <div class="clearfix">
+                                    <label>Contraseña</label>
+                                    <input type="password" required pattern="[a-z0-9]{0,8}" title="Válidos números y letras hasta 8 caracteres"name="contrasenaRegistro" id="contrasenaRegistro"/>
+                                </div>
+                                <div class="clearfix">
+                                    <label>Comprobacion de contraseña</label>
+                                    <input type="password" required pattern="[a-z0-9]{0,8}" title="Válidos números y letras hasta 8 caracteres" name="contrasena2Registro" id="contrasena2Registro"/>
+                                </div>
+                            <div class="clearfix">
+                                <input type="checkbox" name="condicionesRegistro" id="condicionesRegistro" required value="condiciones">
+                                <span class="condicionesRegistro">Acepto los Terminos y Condiciones de uso de esta Pagina</span>
+                                <input id="enviarDatosRegistro" type="submit" value="Registrar" />
+                            </div>
+                        </div>
+                        <div class="errorRegistro" id="errorContrasenaIguales">Las dos  contraseñas deben ser iguales</div>
+                    </form>
+                    <img id="iconoCerrarModalRegistro" src="images/close.svg">
+                </div>
+            </div>
     </section>
     <!--*************************************-->
     <!--*************************************-->
@@ -69,6 +127,7 @@
         <div class="footer"> <a class="footer-link" href="https://opensource.org/licenses/MIT" target="_blank">Copyright</a> <a class="footer-link" href="http://store.steampowered.com/" target="_blank">Steam</a> <a class="footer-link" href="https://www.reddit.com/r/borderlands" target="_blank">Reddit</a>
             <p> Derechos Pertenecientes a Gearbox Software. </p>
         </div>
+
     </section>
 </body>
 <script>
