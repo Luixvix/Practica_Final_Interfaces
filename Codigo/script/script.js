@@ -7,11 +7,8 @@ $(document).ready(function () {
     enviarDatosInicioSesion();
     chechCamposRegistro();
     like();
-<<<<<<< HEAD
     menu();
-=======
     anadirAmigo();
->>>>>>> origin/master
     //setCookie('admin','admin1234',2);
     //alert(getCookie('hola'));
 
@@ -142,9 +139,26 @@ function like() {
     });
 }
 
+function anadirAmigo() {
+    $(".amigoNuevo").click(function () {
+
+        if ($(".amigoNuevo span").html() == "Cancelar Solicitud") {
+            $(".amigoNuevo span").html("Añadir amigo");
+            $(".amigoNuevo i").addClass("ion-person-add");
+            $(".amigoNuevo i").removeClass("ion-close");
+        } else {
+            $(".amigoNuevo span").html("Cancelar Solicitud");
+            $(".amigoNuevo i").removeClass("ion-person-add");
+            $(".amigoNuevo i").addClass("ion-close");
+        }
+
+
+    });
+}
 
 function menu() {
     $(document).ready(function () {
+        var touch = $('#touch-menu');
         var menu = $('.menu');
 
         $(touch).on('click', function (e) {
@@ -158,20 +172,6 @@ function menu() {
                 menu.removeAttr('style');
             }
         });
-    }
-function anadirAmigo(){
-    $(".amigoNuevo").click(function() {
-
-        if ($(".amigoNuevo span").html() == "Cancelar Solicitud") {
-            $(".amigoNuevo span").html("Añadir amigo");
-            $(".amigoNuevo i").addClass("ion-person-add");
-            $(".amigoNuevo i").removeClass("ion-close");
-        } else {
-            $(".amigoNuevo span").html("Cancelar Solicitud");
-            $(".amigoNuevo i").removeClass("ion-person-add");
-            $(".amigoNuevo i").addClass("ion-close");
-        }
-
 
     });
 }
