@@ -128,21 +128,21 @@ function chechCamposRegistro() {
 function like() {
     $(".fav").click(function () {
         if (this.firstChild.style.color == "red") {
-<<<<<<< HEAD
+
             console.log("hola");
             this.firstChild.style.color = "#ffa804";
         } else {
             console.log("adios");
-=======
+
             this.firstChild.style.color = "#ffa804";
         } else {
->>>>>>> origin/master
+
             this.firstChild.style.color = "red";
         }
     });
 }
 
-<<<<<<< HEAD
+
 function menu() {
     $(document).ready(function () {
         var menu = $('.menu');
@@ -158,7 +158,7 @@ function menu() {
                 menu.removeAttr('style');
             }
         });
-=======
+    }
 function anadirAmigo(){
     $(".amigoNuevo").click(function() {
 
@@ -171,7 +171,7 @@ function anadirAmigo(){
             $(".amigoNuevo i").removeClass("ion-person-add");
             $(".amigoNuevo i").addClass("ion-close");
         }
->>>>>>> origin/master
+
 
     });
 }
