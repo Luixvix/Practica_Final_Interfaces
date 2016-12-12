@@ -6,6 +6,7 @@ $(document).ready(function () {
     chechCamposRegistro();
     like();
     anadirAmigo();
+    share();
     //setCookie('admin','admin1234',2);
     //alert(getCookie('hola'));
 
@@ -140,4 +141,20 @@ function anadirAmigo(){
         }
 
     });
+    $(".amigoNuevoSin").click(function() {
+         if ($(".amigoNuevoSin i").hasClass("ion-person-add")) {
+            $(".amigoNuevoSin i").addClass("ion-close");
+             $(".amigoNuevoSin i").removeClass("ion-person-add");
+        } else {
+            $(".amigoNuevoSin i").removeClass("ion-close");
+            $(".amigoNuevoSin i").addClass("ion-person-add");
+        }
+
+    });
+}
+
+function share(){
+	$('.iconshare').click(function(){
+		alert("La imagen ha sido compartida");
+	});
 }
