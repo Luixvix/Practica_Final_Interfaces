@@ -571,6 +571,9 @@ legend{
 .usernameIc{
     margin-left: 30px;
 }
+.usernameIc i {
+    color: #ffa804;
+}
 .escribirComentario{
     background-color: #606060;
     height: 100px;
@@ -874,3 +877,12 @@ legend{
 
 
 /*++++++ fin pagina principal +++++*/
+.fav {
+    border-style: none;
+    background-color: rgba(255, 255, 255, 0);
+    color: #ffa804 !important;
+
+}
+.fav i{
+    color: #ffa804;
+}

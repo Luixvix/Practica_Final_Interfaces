@@ -3,7 +3,7 @@ $(document).ready(function () {
     abrirCerrarModalRegistro();
     enviarDatosInicioSesion();
     chechCamposRegistro();
-
+    like();
     //setCookie('admin','admin1234',2);
     //alert(getCookie('hola'));
 
@@ -112,17 +112,15 @@ function chechCamposRegistro() {
             //alert("todo mal");
         }
 
-
-
     });
 }
-var favoritos = document.querySelectorAll(".fav");
-for (var i = 0; i < favoritos.length; i++) {
-    // https://developer.mozilla.org/es/docs/Web/API/Element/classList
-    favoritos[i].addEventListener("click", function () {
+function like(){
+$(".fav").click(function() {
         if (this.firstChild.style.color == "red") {
+                    console.log("hola");
             this.firstChild.style.color = "#ffa804";
         } else {
+                console.log("adios");
             this.firstChild.style.color = "red";
         }
     });
