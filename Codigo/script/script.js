@@ -5,6 +5,7 @@ $(document).ready(function () {
     enviarDatosInicioSesion();
     chechCamposRegistro();
     like();
+    anadirAmigo();
     //setCookie('admin','admin1234',2);
     //alert(getCookie('hola'));
 
@@ -118,11 +119,25 @@ function chechCamposRegistro() {
 function like(){
 $(".fav").click(function() {
         if (this.firstChild.style.color == "red") {
-                    console.log("hola");
             this.firstChild.style.color = "#ffa804";
         } else {
-                console.log("adios");
             this.firstChild.style.color = "red";
         }
+    });
+}
+
+function anadirAmigo(){
+    $(".amigoNuevo").click(function() {
+
+        if ($(".amigoNuevo span").html() == "Cancelar Solicitud") {
+            $(".amigoNuevo span").html("Añadir amigo");
+            $(".amigoNuevo i").addClass("ion-person-add");
+            $(".amigoNuevo i").removeClass("ion-close");
+        } else {
+            $(".amigoNuevo span").html("Cancelar Solicitud");
+            $(".amigoNuevo i").removeClass("ion-person-add");
+            $(".amigoNuevo i").addClass("ion-close");
+        }
+
     });
 }
