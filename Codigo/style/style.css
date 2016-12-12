@@ -489,11 +489,12 @@ legend{
 }
 .subcaja-hacer-pedido button{
     margin: 0 auto;
-    border: 1px solid #1E1E1E;
     background-color: #ffa804;
     color: #1E1E1E;
     display: inherit;
     padding: 5px;
+    border: 0px solid #1e1e1e;
+    border-radius: 5px;
 }
 .tercera-caja{
     margin-top: 20px;
@@ -640,7 +641,8 @@ legend{
     margin: 10px;
     width: 50px;
     background-color: #ffa804;
-    border: 1px solid #1e1e1e;
+    border: 0px solid #1e1e1e;
+    border-radius: 5px;
 }
 
 
@@ -692,7 +694,8 @@ legend{
 #formularioInicioSesion input[type=submit]{
     float: right;
     background-color: #ffa804;
-    border: 0;
+    border: 0px solid #1e1e1e;
+    border-radius: 5px;
 }
 
 
@@ -747,7 +750,8 @@ legend{
 #formularioRegistro input[type=submit]{
     float: right;
     background-color: #ffa804;
-    border: 0;
+    border: 0px solid #1e1e1e;
+    border-radius: 5px;
     width: 100px;
 }
 #formularioRegistro input[type=checkbox]{
