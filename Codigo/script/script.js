@@ -78,13 +78,21 @@ function checkCookie(nombreCookie,valorCookie) {
     }else{
     	return false;
     }
+<<<<<<< HEAD
    
+=======
+
+>>>>>>> 9e06fb5502b8578d28f7d2e4831de796a223dbc4
 }
 
 
 function chechCamposRegistro(){
 
+<<<<<<< HEAD
 	
+=======
+
+>>>>>>> 9e06fb5502b8578d28f7d2e4831de796a223dbc4
 	$('#enviarDatosRegistro').click(function(event) {
 		var correcto1 = false;
 
@@ -106,12 +114,21 @@ function chechCamposRegistro(){
 			//window.location.href = "mailto:" + $('#emailRegistro').val();
 			//setTimeout(function(){window.location.href = "index.html";}, 100);
 
+<<<<<<< HEAD
 			
 		}else{
 			//alert("todo mal");
 		}
 		
 		
+=======
+
+		}else{
+			//alert("todo mal");
+		}
+
+
+>>>>>>> 9e06fb5502b8578d28f7d2e4831de796a223dbc4
 
 	});
 }
