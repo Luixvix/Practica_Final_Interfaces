@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style/normalize.css">
+    <link rel="stylesheet" type="text/css" href="style/grid.css">
+    <link rel="stylesheet" type="text/css" href="style/ionicons.css">
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="script/js.cookie.js"></script>
+    <title>Borderlands Fanpage</title>
+</head>
+
+<body>
+    <header>
+        <div class="cabecera clearfix">
+            <div class="row"> <i class="ion-navicon-round"></i>
+                <h1>BORDELANDS</h1>
+                <input class="busqueda"><i class="ion-search"></i></input>
+                <button class="boton">Log In</button>
+                <button class="boton">Sign In</button>
+            </div>
+        </div>
+    </header>
+    <!--*************************************-->
+    <!--** CONTENIDO DE LA PAGINA ***********-->
+    <section class="welcome_to_the_fiutur">
+        <div class="welcome">
+            <div class="welcome_content">
+                <h1> WELCOME TO BORDERLANDS </h1>
+                <br>
+                <h3>Página dedicada a fotgrafías, arte y capturas de la comunidad</h3>
+                <br>
+                <button class="boton">Apúntate</button>
+            </div>
+        </div>
+        <div class="content">
+            <div class="content_content">
+                <div class="picon"> <i class="ion-android-cloud-circle"></i></div>
+                <h3>Sube tu contenido</h3> </div>
+        </div>
+        <div class="comment">
+            <div class="comment_content">
+                <div class="picon"> <i class="ion-ios-star"></i></div>
+                <h3>Comenta y Valora</h3> </div>
+        </div>
+        <div class="share">
+            <div class="share_content">
+                <div class="picon"> <i class="ion-android-share-alt"></i></div>
+                <h3>Comparte</h3> </div>
+        </div>
+        <div class="start_here">
+            <div class="start_here_content">
+                <h1>¿No sabes por dónde empezar?</h1>
+                <br>
+                <p>Descubre Nuevo Contenido Aquí</p>
+                <br>
+                <button class="boton">Descubre</button>
+            </div>
+        </div>
+    </section>
+    <!--*************************************-->
+    <!--*************************************-->
+    <!--*************************************-->
+    <section class="seccion-footer">
+        <div class="footer"> <a class="footer-link" href="https://opensource.org/licenses/MIT" target="_blank">Copyright</a> <a class="footer-link" href="http://store.steampowered.com/" target="_blank">Steam</a> <a class="footer-link" href="https://www.reddit.com/r/borderlands" target="_blank">Reddit</a>
+            <p> Derechos Pertenecientes a Gearbox Software. </p>
+        </div>
+    </section>
+</body>
+<script>
+    var favoritos = document.querySelectorAll(".fav");
+    for (var i = 0; i < favoritos.length; i++) {
+        // https://developer.mozilla.org/es/docs/Web/API/Element/classList
+        favoritos[i].addEventListener("click", function () {
+            if (this.firstChild.style.color == "red") {
+                this.firstChild.style.color = "#ffa804";
+            }
+            else {
+                this.firstChild.style.color = "red";
+            }
+        });
+    }
+    /* */
+    var compartir = document.querySelectorAll(".share");
+    for (var i = 0; i < compartir.length; i++) {
+        // https://developer.mozilla.org/es/docs/Web/API/Element/classList
+        compartir[i].addEventListener("click", function () {
+            var actual = this.parentNode.parentNode.parentNode.firstElementChild.firstElementChild;
+            var img = this.parentNode.parentNode.parentNode.firstElementChild.firstElementChild.getAttribute("src");
+            //alert(this.parentNode.parentNode.parentNode.firstElementChild.firstElementChild.className);
+            actual.setAttribute("src", "images/shared.png");
+            setTimeout(function () {
+                actual.setAttribute("src", img);
+            }, 1500);
+        });
+    }
+    $(".comentar").click(function () {
+        //alert(this.parentNode.parentNode.parentNode.lastElementChild.firstElementChild.className);
+        var seccion = $(this.parentNode.parentNode.parentNode.lastElementChild);
+        if ($(seccion).css('visibility') == 'hidden') {
+            $(seccion).css("visibility", "visible");
+            $(seccion).css('height', 'inherit');
+        }
+        var expand = $(this.parentNode.parentNode.parentNode.lastElementChild.firstElementChild);
+        var coment = $(this.parentNode.parentNode.parentNode.lastElementChild.firstElementChild.nextElementSibling.nextElementSibling);
+        var enviar = $(this.parentNode.parentNode.parentNode.lastElementChild.firstElementChild.nextElementSibling.nextElementSibling.nextElementSibling);
+        if ($(coment).css('visibility') == 'hidden') {
+            $(coment).css('visibility', 'visible');
+            $(enviar).css('visibility', 'visible');
+            $(seccion).css('height', 'inherit');
+        }
+        $(".enviar").click(function () {
+            var comentario = $(coment).val();
+            if (comentario != null) {
+                //alert(this.nextElementSibling.nextElementSibling.className);
+                var comentarios = $(this.previousElementSibling.previousElementSibling);
+                $(comentarios).text(comentario);
+            }
+            if ($(coment).css('visibility') == 'visible') {
+                $(coment).css("visibility", "hidden");
+                $(enviar).css("visibility", "hidden");
+                $(expand).css("visibility", "visible");
+                $(seccion).css('height', '50px');
+            }
+        });
+    });
+    $(".expandir").click(function () {
+        var val = $(this).text();
+        if (val == "+") {
+            $(this.parentElement).css('height', 'inherit');
+            $(this).text("-");
+        }
+        else {
+            $(this.parentElement).css('height', '50px');
+            $(this).text("+");
+        }
+        return false;
+    });
+    /****************************/
+    /****************************/
+    /****************************/
+    // Get the modal login
+    var modal = document.getElementById('myModal');
+    // Get the button that opens the modal login
+    var btn = document.getElementById("mbtn");
+    // Get the <span> element that closes the modal login
+    var span = document.getElementsByClassName("close")[0];
+    // When the user clicks the button, open the modal login
+    btn.onclick = function () {
+            modal.style.display = "block";
+        }
+        // When the user clicks on <span> (x), close the modal login
+    span.onclick = function () {
+            modal.style.display = "none";
+        }
+        // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+        /****************************/
+        /****************************/
+        // Get the modal sign in
+    var modal_sign = document.getElementById('myModal-sign');
+    // Get the button that opens the modal login
+    var btn_sign = document.getElementById("mbtn-sign");
+    // Get the <span> element that closes the modal login
+    var span_sign = document.getElementsByClassName("close-sign")[0];
+    // When the user clicks the button, open the modal login
+    btn_sign.onclick = function () {
+            modal_sign.style.display = "block";
+        }
+        // When the user clicks on <span> (x), close the modal login
+    span_sign.onclick = function () {
+            modal_sign.style.display = "none";
+        }
+        // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+            if (event.target == modal_sign) {
+                modal_sign.style.display = "none";
+            }
+        }
+        /****************************/
+        /****************************/
+        /****************************/
+    function bsubmit() {
+        if (!$('#password').val()) {
+            $('#password').css("background", "red");
+            $('#register').css("background", "red");
+            $("#register").prop("disabled", true);
+        }
+        else {
+            $('#password').css("background", "#e8eeef");
+            $('#register').css("background", "#ffa804");
+            $("#register").prop("disabled", false);
+        }
+        if (!$('#username').val()) {
+            $('#username').css("background", "red");
+            $('#register').css("background", "red");
+            $("#register").prop("disabled", true);
+        }
+        else {
+            $('#username').css("background", "#e8eeef");
+            $('#register').css("background", "#ffa804");
+            $("#register").prop("disabled", false);
+        }
+        var c = document.cookie;
+        alert(c);
+    };
+
+    function getCookieName(cname) {
+        var name = cname + "=";
+        var ca = document.cookie.split(';');
+        for (var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') {
+                c = c.substring(1);
+            }
+            if (c.indexOf(name) == 0) {
+                return c.substring(name.length, c.length);
+            }
+        }
+        return "";
+    };
+
+    function getCookiePass(cpass) {
+        var password = cpass + "=";
+        var ca = document.cookie.split(';');
+        for (var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') {
+                c = c.substring(1);
+            }
+            if (c.indexOf(password) == 0) {
+                return c.substring(password.length, c.length);
+            }
+        }
+        return "";
+    };
+    $('#username').focusout(function () {
+        if (!$('#username').val()) {
+            $('#username').css("background", "red");
+            $('#register').css("background", "red");
+            $("#register").prop("disabled", true);
+        }
+        else {
+            $('#username').css("background", "#e8eeef");
+            $('#register').css("background", "#ffa804");
+            $("#register").prop("disabled", false);
+        }
+    });
+    $('#password').focusout(function () {
+        if (!$('#password').val()) {
+            $('#password').css("background", "red");
+            $('#register').css("background", "red");
+            $("#register").prop("disabled", true);
+        }
+        else {
+            $('#password').css("background", "#e8eeef");
+            $('#register').css("background", "#ffa804");
+            $("#register").prop("disabled", false);
+        }
+    });
+</script>
+
+</html>
+<!--
+
+-->
