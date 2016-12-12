@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    $('.ocultarUsuario').css({"display":"none"});
     abrirCerrarModalLogin();
     abrirCerrarModalRegistro();
     enviarDatosInicioSesion();
@@ -36,7 +37,7 @@ function enviarDatosInicioSesion() {
         var estado = checkCookie($('#nombreUsuario').val(), $('#passUsuario').val());
         if (estado == true) {
             //$('#textoNombreUsuario').text("Bienvenid@ " + $('#nombreUsuario').val());
-            $('.ocultarUsuario').show();
+            $('.ocultarUsuario').css({"display":"inline-block"});
             $('#botonEntrar').hide();
             $('#botonRegistrar').hide();
             $('.ventanaLogin').fadeOut();

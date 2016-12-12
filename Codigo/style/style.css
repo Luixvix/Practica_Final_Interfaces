@@ -428,6 +428,10 @@ form {
     float: left;
     margin-right: 10px;
 }
+.ultimas-subidas-3{
+    width: 100%;
+    float: left;
+}
 .hacer-pedido{
     width: calc(30% - 10px);
     float: left;
@@ -453,6 +457,24 @@ form {
     margin: 20px;
     margin-right: 10px;
 }
+.ultimas-subidas-3 .foto1-ultimas-subidas{
+    width: calc(33% - 30px);
+    float: left;
+    margin: 20px;
+    margin-right: 10px;
+}
+.ultimas-subidas-3 .foto2-ultimas-subidas{
+    width: calc(33% - 30px);
+    float: left;
+    margin: 20px;
+    margin-right: 10px;
+}
+.ultimas-subidas-3 .foto3-ultimas-subidas{
+    width: calc(33% - 30px);
+    float: left;
+    margin: 20px;
+    margin-right: 10px;
+}
 fieldset{
     border-color: transparent;
 }
@@ -462,7 +484,8 @@ legend{
 .subcaja-hacer-pedido textarea{
     border: 1px solid #1E1E1E;
     resize: none;
-    height: 220px;
+    padding: 5px;
+    margin-bottom: 10px;
 }
 .subcaja-hacer-pedido button{
     margin: 0 auto;
@@ -746,7 +769,7 @@ legend{
 }
 
 .ocultarUsuario{
-    display: none;
+
 }
 /*fin estilos ventana modal login y registro*/
 /*++++++ pagina principal +++++*/
