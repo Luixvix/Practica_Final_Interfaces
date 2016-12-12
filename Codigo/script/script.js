@@ -7,7 +7,11 @@ $(document).ready(function () {
     enviarDatosInicioSesion();
     chechCamposRegistro();
     like();
+<<<<<<< HEAD
     menu();
+=======
+    anadirAmigo();
+>>>>>>> origin/master
     //setCookie('admin','admin1234',2);
     //alert(getCookie('hola'));
 
@@ -124,15 +128,21 @@ function chechCamposRegistro() {
 function like() {
     $(".fav").click(function () {
         if (this.firstChild.style.color == "red") {
+<<<<<<< HEAD
             console.log("hola");
             this.firstChild.style.color = "#ffa804";
         } else {
             console.log("adios");
+=======
+            this.firstChild.style.color = "#ffa804";
+        } else {
+>>>>>>> origin/master
             this.firstChild.style.color = "red";
         }
     });
 }
 
+<<<<<<< HEAD
 function menu() {
     $(document).ready(function () {
         var menu = $('.menu');
@@ -148,6 +158,20 @@ function menu() {
                 menu.removeAttr('style');
             }
         });
+=======
+function anadirAmigo(){
+    $(".amigoNuevo").click(function() {
+
+        if ($(".amigoNuevo span").html() == "Cancelar Solicitud") {
+            $(".amigoNuevo span").html("Añadir amigo");
+            $(".amigoNuevo i").addClass("ion-person-add");
+            $(".amigoNuevo i").removeClass("ion-close");
+        } else {
+            $(".amigoNuevo span").html("Cancelar Solicitud");
+            $(".amigoNuevo i").removeClass("ion-person-add");
+            $(".amigoNuevo i").addClass("ion-close");
+        }
+>>>>>>> origin/master
 
     });
 }
