@@ -1,4 +1,4 @@
-/*Set up basico*/
+
 
 * {
     margin: 0;
@@ -32,7 +32,7 @@ html {
 /*Reusable*/
 
 .row {
-    max-width: 1140px;
+    max-width: 1150px;
     margin: auto;
 }
 
@@ -106,17 +106,6 @@ h2 {
 
 }
 
-.share {
-    background-color: rgba(255, 255, 255, 0);
-    border-style: none;
-    position: relative;
-    float: right;
-    color:#ffa804;
-    font-size: 30px;
-    padding-left: 2%;
-    padding-right: 2%;
-
-}
 /************* fin Galeria ************/
 /*footer*/
 
@@ -150,6 +139,610 @@ h2 {
 }
 
 
+
 /*******************************/
 
 
+
+.expandir {
+    display: block;
+    text-align: center;
+    visibility: hidden;
+}
+
+.enviar {
+    visibility: hidden;
+    float: left;
+    margin: 15px 0 0 25px;
+}
+
+.comentarios {
+    display: block;
+    text-align: justify;
+    margin: 5px !IMPORTANT;
+}
+
+
+/* The Modal (background) */
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+
+/* Modal Content */
+
+.modal-content {
+    max-width: 400px;
+    position: relative;
+    background-color: #ffa804;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+
+/* Add Animation */
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+
+/* The Close Button */
+
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #ffa804;
+    color: white;
+}
+
+.modal-header p {
+    display: block;
+    padding: 4px;
+    color: white;
+    float: left;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.formulario {
+    background: #1d1d1d;
+    padding: 4em 4em 4em;
+}
+
+.etiqueta {
+    display: block;
+    font-size: 1.6em;
+    margin: 0 0 .5em;
+    color: white;
+}
+
+.usuario-form {
+    display: block;
+    padding: 4px;
+    color: white;
+    float: left;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.contraseña-form {
+    display: block;
+    padding: 4px;
+    color: white;
+    float: left;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.form-button {
+    margin-top: 10px;
+    float: right;
+}
+
+form {
+    max-width: 300px;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background: #2c2c2c;
+    border-radius: 8px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+textarea,
+select {
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    font-size: 16px;
+    height: auto;
+    margin: 0;
+    outline: 0;
+    padding: 15px;
+    width: 100%;
+    background-color: #e8eeef;
+    color: black;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+    margin-bottom: 30px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin: 0 4px 8px 0;
+}
+
+select {
+    padding: 6px;
+    height: 32px;
+    border-radius: 2px;
+}
+
+.rbutton {
+    padding: 19px 39px 18px 39px;
+    color: white;
+    background-color: #ffa804;
+    font-size: 18px;
+    text-align: center;
+    font-style: normal;
+    border-radius: 5px;
+    width: 100%;
+    border: 1px solid #ffa804;
+    border-width: 1px 1px 3px;
+    box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+legend {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+label.light {
+    font-weight: 300;
+    display: inline;
+}
+
+form {
+    max-width: 550px;
+}
+.study-info{
+    display: none;
+}
+
+
+
+
+
+
+/*CSS DE ADRIAAAAAAAAAAAAAAAAAAAAAAAAAAAAN*/
+
+/*******USUARIO***********/
+/*
+*
+*
+*
+*/
+.block-gris{
+    background-color: #1E1E1E;
+    color: #1E1E1E;
+}
+.block-gris img{
+    width: 100%;
+}
+.block-gris i{
+    margin-right: 5px;
+}
+.usuario-head-imagen{
+    width: calc(70% - 30px);
+    float: left;
+    margin: 20px;
+     margin-right: 10px;
+}
+.usuario-detalle{
+    background-color: #606060;
+    width: calc(30% - 30px);
+    float: left;
+    margin: 20px;
+    margin-left: 10px;
+    color: #1E1E1E;
+}
+.usuario-detalle div{
+    padding: 5px 10px;
+}
+.usuario-imagen{
+    margin-top: 20px;
+    background-color: #606060;
+}
+.usuario-head{
+    color: #ffa804;
+            }
+.usuario-head div{
+    display: inline-block;
+    width: 32%;
+    text-align: center;
+}
+.segunda-caja{
+    margin-top: 20px;
+}
+.ultimas-subidas{
+    width: calc(70% - 10px);
+    float: left;
+    margin-right: 10px;
+}
+.hacer-pedido{
+    width: calc(30% - 10px);
+    float: left;
+    margin-left: 10px;
+}
+.subcaja-ultimas-subidas{
+    margin: 20px;
+    background-color: #606060;
+}
+.subcaja-hacer-pedido{
+    margin: 20px;
+    background-color: #606060;
+}
+.foto1-ultimas-subidas{
+    width: calc(50% - 30px);
+    float: left;
+    margin: 20px;
+    margin-right: 10px;
+}
+.foto2-ultimas-subidas{
+    width: calc(50% - 30px);
+    float: left;
+    margin: 20px;
+    margin-right: 10px;
+}
+fieldset{
+    border-color: transparent;
+}
+legend{
+    color: #ffa804;
+}
+.subcaja-hacer-pedido textarea{
+    border: 1px solid #1E1E1E;
+    resize: none;
+    height: 220px;
+}
+.subcaja-hacer-pedido button{
+    margin: 0 auto;
+    border: 1px solid #1E1E1E;
+    background-color: #ffa804;
+    color: #1E1E1E;
+    display: inherit;
+    padding: 5px;
+}
+.tercera-caja{
+    margin-top: 20px;
+}
+.tercera-caja .comentarios{
+    width: 100%;
+    float: left;
+    margin: 0 !important;
+}
+.subcaja-comentarios{
+    margin: 20px;
+    background-color: #606060;
+}
+.comentario-contenedor{
+    width: 80%;
+    margin-bottom: 30px;
+}
+.comentario-username{
+    text-align: right;
+}
+/***********************POOOOOOOOOST**************/
+
+.tituloFoto{
+    background-color: #606060;
+    width: calc(66% - 10px);
+    margin-top: 50px;
+    float: left;
+    margin-right: 10px;
+}
+
+.masAutor{
+    background-color: #606060;
+    width: calc(33% - 10px);
+    margin-top: 50px;
+    float: left;
+    margin-left: 10px;
+}
+.nombreTitulo{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.imgArea{
+    float: left;
+    margin: 20px;
+    margin-right: 20px;
+    position: relative;
+
+}
+
+.imgArea img{
+    width: 100%;
+}
+
+.imgArea i{
+    position: absolute;
+    bottom: 0;
+    right: 5px;
+    font-size: 30px;
+}
+.moreAt{
+    margin-top: 10px;
+}
+.fotoP{
+    width: calc(50% - 40px);
+    float: left;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.imgArea2{
+    float: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.imgArea2 img{
+    width: 100%;
+}
+.coments{
+    width: calc(66% - 10px);
+    margin-top: 50px;
+    float: left;
+    margin-right: 10px;
+}
+
+.descripcion{
+    background-color: #606060;
+    width: 100%;
+    float: left;
+    margin-bottom: 25px;
+}
+
+.txtDes{
+    color: black;
+    margin: 20px;
+    text-align: justify;
+}
+.usernameIc{
+    margin-left: 30px;
+}
+.escribirComentario{
+    background-color: #606060;
+    height: 100px;
+    width: 100%;
+    float: left;
+}
+
+.contenidoSimilar{
+    background-color: #606060;
+    width: calc(33% - 10px);
+    margin-top: 50px;
+    float: left;
+    margin-left: 10px;
+}
+
+.comentarioGuardados{
+    background-color: #1e1e1e;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    float: left;
+    width: calc(66% - 10px);
+    margin-right: 10px;
+    text-align: justify;
+
+}
+
+.txtArea{
+    padding: 15px;
+}
+
+.escComent{
+    height: 45px;
+    padding: 2px;
+    width: 90%;
+    resize: none;
+    float: left;
+}
+
+.botonEnviar{
+    float: left;
+    margin: 10px;
+    width: 50px;
+    background-color: #ffa804;
+    border: 1px solid #1e1e1e;
+}
+
+
+/*inicio estilos ventana modal login y registro*/
+.ventanaLogin{
+    display: none;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 0px 10px 5px #000;
+}
+.ventanaLogin form{
+    background-color: transparent;
+}
+.ventanaLogin input{
+    margin: 0 auto;
+    display: block;
+}
+#enviarDatosLogin{
+    width auto;
+    cursor: pointer;
+}
+.containerVentanaLogin{
+    padding: 30px;
+    background-color: #1E1E1E;
+    position: absolute;
+    /* width: 500px; */
+    top: calc((100% - 246px) / 2);
+    left: calc((100% - 500px) / 2);
+}
+#iconoCerrarModalLogin{
+    width: 25px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+#botonEntrar{
+    cursor: pointer;
+}
+#formularioInicioSesion label, #formularioInicioSesion input{
+    float: left;
+    width: 200px;
+    padding: 5px;
+}
+#formularioInicioSesion input[type=submit]{
+    float: right;
+    background-color: #ffa804;
+    border: 0;
+}
+
+
+.ventanaRegistro{
+    display: none;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 0px 10px 5px #000;
+}
+.ventanaRegistro form{
+    background-color: transparent;
+}
+.ventanaRegistro input{
+    margin: 0 auto;
+    display: block;
+}
+#enviarDatosRegistro{
+    width auto;
+}
+.containerVentanaRegistro{
+    padding: 30px;
+    background-color: #1E1E1E;
+    position: absolute;
+    /* width: 500px; */
+    top: 10%;
+    top: calc((100% - 352px) / 2);
+    left: calc((100% - 600px) / 2);
+    overflow: auto;
+}
+#iconoCerrarModalRegistro{
+    width: 25px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+#botonRegistrar{
+    cursor: pointer;
+}
+#formularioRegistro label, #formularioRegistro input{
+    float: left;
+    width: 200px;
+    padding: 5px;
+}
+#formularioRegistro label{
+    width: 300px;
+}
+#formularioRegistro input[type=submit]{
+    float: right;
+    background-color: #ffa804;
+    border: 0;
+    width: 100px;
+}
+#formularioRegistro input[type=checkbox]{
+    width: auto;
+    margin-top: 5px;
+}
+.errorRegistro{
+    display: none;
+    background-color: #FF0000;
+    margin-bottom: 15px;
+    color: #FFF;
+    padding: 5px;
+}
+.condicionesRegistro{
+    font-size: 12px;
+    float: left;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.ocultarUsuario{
+    display: none;
+}
+/*fin estilos ventana modal login y registro*/

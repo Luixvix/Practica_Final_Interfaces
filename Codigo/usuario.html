@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="style/normalize.css">
+        <link rel="stylesheet" type="text/css" href="style/grid.css">
+        <link rel="stylesheet" type="text/css" href="style/ionicons.css">
+        <link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="style/style.css">
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="script/js.cookie.js"></script>
+        <script src="script/script.js"></script>
+        <title>Borderlands Fanpage</title>
+    </head>
+
+    <body>
+        <header></header>
+        <section style="margin: 50px 0;">
+            <div class="row">
+                <div class="block-gris clearfix">
+                    <div class="usuario-head-imagen">
+                        <div class="usuario-head">
+                            <div class="anadir-artista"><i id="botonEntrar" class="ion-star"></i>Añadir artista</div>
+                            <div class="username"><i class="ion-person"></i>Username</div>
+                            <div class="anadir-amigo"><i id="botonRegistrar" class="ion-person-add"></i>Añadir amigo</div>
+                        </div>
+                        <div class="usuario-imagen">
+                            <fieldset>
+                                <legend>Imagen destacada</legend>
+                                <img src="images/pg_2.jpg">
+                            </fieldset>
+                        </div>
+                    </div>
+                    <div class="usuario-detalle">
+                        <div class="tipo-usuario"><i class="ion-person"></i>Tipo de usuario:</div>
+                        <div class="fecha-nacimiento-usuario"><i class="ion-calendar"></i>F. de Nacimiento:</div>
+                        <div class="pais-usuario"><i class="ion-flag"></i>Pais:</div>
+                        <div class="contacto-usuario"><i class="ion-ios-telephone"></i>Contacto:</div>
+                        <div class="amigos-compartidos-usuario"><i class="ion-person-stalker"></i>Amigos compartidos:</div>
+                        <br/>
+                        <br/>
+                        <div class="anadir-como-amigo ocultarUsuario"><i class="ion-person-add"></i>Añadir como amigo</div>
+                        <div class="chat-privado"><i class="ion-chatbubbles"></i>Chat Privado</div>
+                        <div class="mensaje-usuario"><i class="ion-email"></i>Mensaje</div>
+                        <div class="biografia-usuario">
+                            <fieldset>
+                                <legend>Biografia Usuario</legend>
+                                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec semper orci. Aliquam tincidunt, arcu a imperdiet.
+                                </span>
+                            </fieldset>
+                        </div>
+                    </div>
+                </div>
+                <div class="segunda-caja clearfix">
+                    <div class="block-gris ultimas-subidas">
+                        <div class="subcaja-ultimas-subidas">
+                            <fieldset>
+                                <legend>Ultimas subidas</legend>
+                                <div class="foto1-ultimas-subidas">
+                                    <img src="images/pg_3.jpg">
+                                </div>
+                                <div class="foto2-ultimas-subidas">
+                                    <img src="images/pg_4.jpg">
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+                    <div class="block-gris hacer-pedido">
+                        <div class="subcaja-hacer-pedido">
+                            <fieldset>
+                                <legend>Hacer pedido</legend>
+                                <textarea>Manda tu pedido a este Artista!</textarea>
+                                <div>
+                                    <button>Enviar</button>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+                </div>
+                <div class="tercera-caja clearfix">
+                    <div class="block-gris comentarios">
+                        <div class="subcaja-comentarios">
+                            <fieldset>
+                                <legend>Comentarios</legend>
+                                <div class="lista-comentarios">
+                                    <div class="comentario-contenedor">
+                                        <div class="comentario-texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                        </div>
+                                        <div class="comentario-username">Username 1</div>
+                                    </div>
+                                    <div class="comentario-contenedor">
+                                        <div class="comentario-texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                        </div>
+                                        <div class="comentario-username">Username 2</div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="ventanaLogin">
+                <div class="containerVentanaLogin">
+                    <div style="margin-bottom: 15px; text-align: center;">
+                        <span style="font-size: 20px;">Iniciar Sesión</span>
+                    </div>
+                    <form action="javascript: void(0);" id="formularioInicioSesion" method="POST">
+                        <div style="margin-bottom: 15px;">
+                            <div class="clearfix">
+                                <label>Nombre de usuario</label>
+                                <input type="text" name="nombreUsuario" id="nombreUsuario" style="margin-bottom: 5px;"/>
+                            </div>
+                            <div class="clearfix">
+                                <label>Contraseña</label>
+                                <input type="password" name="passUsuario" id="passUsuario"/>
+                            </div>
+                        </div>
+                        <div>
+                            <input id="enviarDatosLogin" type="submit" value="Entrar" />
+                        </div>
+                    </form>
+                    <img id="iconoCerrarModalLogin" src="images/close.svg">
+                </div>
+            </div>
+            <div class="ventanaRegistro">
+                <div class="containerVentanaRegistro">
+                    <div style="margin-bottom: 15px; text-align: center;">
+                        <span style="font-size: 20px;">Registrate</span>
+                    </div>
+                    <form action="javascript: void(0);" id="formularioRegistro" method="POST">
+                        <div style="margin-bottom: 15px;">
+                                <div class="clearfix">
+                                    <label>Nombre de usuario</label>
+                                    <input type="text" required name="nombreUsuarioRegistro" id="nombreUsuarioRegistro"/>
+                                </div>
+                                <div class="clearfix">
+                                    <label>Email</label>
+                                    <input type="email" required name="emailRegistro" id="emailRegistro"/>
+                                </div>
+                                <div class="clearfix">
+                                    <label>Contraseña</label>
+                                    <input type="password" required pattern="[a-z0-9]{0,8}" title="Válidos números y letras hasta 8 caracteres"name="contrasenaRegistro" id="contrasenaRegistro"/>
+                                </div>
+                                <div class="clearfix">
+                                    <label>Comprobacion de contraseña</label>
+                                    <input type="password" required pattern="[a-z0-9]{0,8}" title="Válidos números y letras hasta 8 caracteres" name="contrasena2Registro" id="contrasena2Registro"/>
+                                </div>
+                            <div class="clearfix">
+                                <input type="checkbox" name="condicionesRegistro" id="condicionesRegistro" required value="condiciones">
+                                <span class="condicionesRegistro">Acepto los Terminos y Condiciones de uso de esta Pagina</span>
+                                <input id="enviarDatosRegistro" type="submit" value="Registrar" />
+                            </div>
+                        </div>
+                        <div class="errorRegistro" id="errorContrasenaIguales">Las dos  contraseñas deben ser iguales</div>
+                    </form>
+                    <img id="iconoCerrarModalRegistro" src="images/close.svg">
+                </div>
+            </div>
+
+
+
+
+
+
+
+        </section>
+        <footer></footer>
+    </body>
+
+
+</html>
+
