@@ -1,0 +1,83 @@
+
+.tituloFoto{
+    background-color: #404040;
+    height: 600px;
+    width: calc(66% - 10px);
+    margin-top: 50px;
+    float: left;
+    margin-right: 10px;
+}
+
+.masAutor{
+    background-color: #404040;
+    height: 600px;
+    width: calc(33% - 10px);
+    margin-top: 50px;
+    float: left;
+    margin-left: 10px;
+}
+.nombreTitulo{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.coments{
+    width: calc(66% - 10px);
+    margin-top: 50px;
+    float: left;
+    margin-right: 10px;
+}
+.descripcion{
+    background-color: #404040;
+    height: 250px;
+    width: 100%;
+    float: left;
+    margin-bottom: 25px;
+}
+
+.escribirComentario{
+    background-color: #404040;
+    height: 100px;
+    width: 100%;
+    float: left;
+}    
+
+.contenidoSimilar{
+    background-color: #404040;
+    height: 375px;
+    width: calc(33% - 10px);
+    margin-top: 50px;
+    float: left;
+    margin-left: 10px;
+}
+
+.comentarioGuardados{
+    background-color: #1e1e1e;
+    height: 425px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    float: left;
+    width: calc(66% - 10px);
+    margin-right: 10px;
+
+}
+
+.txtArea{
+    padding: 15px;
+}
+
+.escComent{
+    height: 45px;
+    padding: 2px;
+    width: 90%;
+    resize: none;
+    float: left;
+}
+
+.botonEnviar{
+    float: left;
+    margin: 10px;
+    width: 50px;
+    background-color: #ffa804;
+    border: 1px solid #1e1e1e;
+}
