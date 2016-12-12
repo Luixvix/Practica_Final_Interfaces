@@ -34,34 +34,37 @@
             </div>
         </div>
     </header>
-
+    <section class=" row titulo-seccion">
+        <h1>NOVEDADES</h1>
+    </section>
     <section class="row seccion-galeria">
         <div id="gallery" style="display:none;">
-            <a href="#">
-                <img alt="Lemon Slice" src="images/borderlands-logo.png" data-image="images/borderlands-logo.png" data-description="This is a Lemon Slice" style="display:none">
+
+            <a class="imagen-galeria" href="#">
+                <img alt="Lemon Slice" src="images/borderlands-logo.png" data-image="images/borderlands-logo.png" data-description="This is a Lemon Slice">
             </a>
             <a href="#">
                 <img alt="Lemon Slice" src="images/tiny%20tina_th.png" data-image="images/tiny%20tina.png" data-description="This is a Lemon Slice" style="display:none">
             </a>
-            <a href="#">
+            <a class="imagen-galeria" href="#">
                 <img alt="Lemon Slice" src="images/pg_2_th.jpg" data-image="images/pg_2.jpg" data-description="This is a Lemon Slice" style="display:none">
             </a>
-            <a href="#">
+            <a class="imagen-galeria" href="#">
                 <img alt="Lemon Slice" src="images/pg_3_th.jpg" data-image="images/pg_3.jpg" data-description="This is a Lemon Slice" style="display:none">
             </a>
-            <a href="#">
+            <a class="imagen-galeria" href="#">
                 <img alt="Lemon Slice" src="images/sirenPortrait_th.png" data-image="images/sirenPortrait.png" data-description="This is a Lemon Slice" style="display:none">
             </a>
-            <a href="#">
+            <a class="imagen-galeria" href="#">
                 <img alt="Lemon Slice" src="images/pg_8_th.jpg" data-image="images/pg_8.jpg" data-description="This is a Lemon Slice" style="display:none">
             </a>
-            <a href="#">
+            <a class="imagen-galeria" href="#">
                 <img alt="Lemon Slice" src="images/pg_9_th.jpg" data-image="images/pg_9.jpg" data-description="This is a Lemon Slice" style="display:none">
             </a>
-            <a href="#">
+            <a class="imagen-galeria" href="#">
                 <img alt="Lemon Slice" src="images/assassinPortrait_th.png" data-image="images/assassinPortrait.png" data-description="This is a Lemon Slice" style="display:none">
             </a>
-            <a href="#">
+            <a class="imagen-galeria" href="#">
                 <img alt="Lemon Slice" src="images/Krieg_th.png" data-image="images/Krieg.png" data-description="This is a Lemon Slice" style="display:none">
             </a>
         </div>
@@ -71,7 +74,8 @@
                 jQuery("#gallery").unitegallery({
                     tiles_type: "justified",
                     tile_enable_icons: true,
-                    //tile_show_link_icon: true,
+                    tile_enable_overlay: false,
+                    tile_show_link_icon: true,
                     tile_enable_textpanel: true,
                     tile_textpanel_source: "title",
                     tile_textpanel_appear_type: "slide",
