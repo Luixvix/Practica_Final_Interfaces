@@ -8,6 +8,7 @@ $(document).ready(function () {
     anadirAmigo();
     share();
     enviarComentarios();
+    cerrarSesion();
     //setCookie('admin','admin1234',2);
     //alert(getCookie('hola'));
 
@@ -37,7 +38,7 @@ function enviarDatosInicioSesion() {
     $('#enviarDatosLogin').click(function () {
        var estado = checkCookie($('#nombreUsuario').val(), $('#passUsuario').val());
         if (estado == true) {
-            //$('#textoNombreUsuario').text("Bienvenid@ " + $('#nombreUsuario').val());
+            $('#textoNombreUsuario').text("@" + $('#nombreUsuario').val());
             $('.ocultarUsuario').css({"display":"inline-block"});
             $('#botonEntrar').hide();
             $('#botonRegistrar').hide();
@@ -201,4 +202,11 @@ function enviarComentarios(){
         }
     });
 
+}
+
+function cerrarSesion(){
+    $('#botonCerrar').click(function(){
+        //console.log("holi");
+        window.location.reload();
+    });
 }
