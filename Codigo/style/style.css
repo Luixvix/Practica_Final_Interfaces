@@ -73,7 +73,7 @@ html {
     border-style: none;
 }
 
-.cabecera button {
+.boton {
     font-size: 90%;
     background-color: #ffa804;
     border-style: none;
@@ -993,3 +993,14 @@ legend{
     top: 0px;
 }
 
+
+.more-section {
+    text-align: center;
+    margin: 25px auto 25px auto;
+}
+
+.more-section button{
+    height: 30px;
+    width: 100px;
+    font-size: 120%;
+}
