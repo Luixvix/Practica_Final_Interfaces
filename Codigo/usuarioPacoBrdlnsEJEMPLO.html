@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="style/normalize.css">
+        <link rel="stylesheet" type="text/css" href="style/grid.css">
+        <link rel="stylesheet" type="text/css" href="style/ionicons.css">
+        <link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="style/style.css">
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="script/js.cookie.js"></script>
+        <script src="script/script.js"></script>
+        <title>Borderlands Fanpage</title>
+    </head>
+
+    <body>
+        <header>
+            <div class="cabecera clearfix">
+                <ul class="menu">
+                <li><a href="#"><i class="micon ion-navicon-round"></i></a>
+                    <ul class="sub-menu">
+                        <li><a href="pagina_inicio.html">Bienvenida</a></li>
+                        <li><a href="galeria.html">Galeria</a></li>
+                        <li><a href="#">Ajustes</a></li>
+                        <li><a href="#">Amigos</a></li>
+                        <li><a href="#">Artistas Añadidos</a></li>
+                        <li><a href="#">Comentarios</a></li>
+                        <li><a href="#">Categorias</a>
+                            <ul class="sub-menu">
+                                <li><a href="#">Artistas</a></li>
+                                <li><a href="#">Nuevos</a></li>
+                                <li><a href="#">Comics</a></li>
+                                <li><a href="#">FanArts</a></li>
+                                <li><a href="#">Capturas</a></li>
+                                <li><a href="#">Cosplays</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </li>
+            </ul>
+                <div class="row">
+
+                    <h1>BORDELANDS</h1>
+                    <input class="busqueda"><i class="ion-search"></i></input>
+                    <button class="boton" id="botonEntrar">Log In</button>
+                    <button class="boton" id="botonRegistrar">Sign In</button>
+                    <span class="ocultarUsuario" id="textoNombreUsuario"></span>
+                    <button class="boton ocultarUsuario" id="botonCerrar">Log Out</button>
+                </div>
+            </div>
+        </header>
+        <section style="margin: 50px 0;">
+            <div class="row">
+                <div class="block-gris clearfix">
+                    <div class="usuario-head-imagen">
+                        <div class="usuario-head">
+                            <div class="username"><i class="ion-person"></i>PacoBrdlnds</div>
+                            <div class="anadir-amigo ocultarUsuario amigoNuevo"><i class="ion-person-add"></i><span>Añadir amigo</span></div>
+                        </div>
+                        <div class="usuario-imagen">
+                            <fieldset>
+                                <legend>Imagen destacada</legend>
+                                <img src="images/pg_2.jpg">
+                            </fieldset>
+                        </div>
+                    </div>
+                    <div class="usuario-detalle">
+                        <div class="tipo-usuario"><i class="ion-person"></i>Tipo de usuario: Aficionado</div>
+                        <div class="fecha-nacimiento-usuario"><i class="ion-calendar"></i>F. de Nacimiento: 22/07/1994</div>
+                        <div class="pais-usuario"><i class="ion-flag"></i>Pais: España</div>
+                        <div class="contacto-usuario"><i class="ion-ios-telephone"></i>Contacto: 666777888</div>
+                        <div class="amigos-compartidos-usuario"><i class="ion-person-stalker"></i>Amigos: 2245</div>
+                        <br/>
+                        <br/>
+                        <div class="anadir-como-amigo ocultarUsuario amigoNuevo"><i class="ion-person-add"></i><span>Añadir amigo</span></div>
+                        <div class="chat-privado"><i class="ion-chatbubbles"></i>Chat Privado</div>
+                        <div class="mensaje-usuario"><i class="ion-email"></i>Mensaje</div>
+                        <div class="biografia-usuario">
+                            <fieldset>
+                                <legend>Biografia Usuario</legend>
+                                <span>Aficionado a la fotografía. Jugador semiprofesional del videojuego Borderlands y gran afcionado a los videojuegos en general, preferiblemente los shooters</span>
+                            </fieldset>
+                        </div>
+                    </div>
+                </div>
+                <div class="segunda-caja clearfix">
+                    <div class="block-gris ultimas-subidas-3">
+                        <div class="subcaja-ultimas-subidas">
+                            <fieldset>
+                                <legend>Ultimas subidas</legend>
+                                <div class="foto1-ultimas-subidas">
+                                    <img src="images/pg_3.jpg">
+                                </div>
+                                <div class="foto2-ultimas-subidas">
+                                    <img src="images/pg_4.jpg">
+                                </div>
+                                <div class="foto3-ultimas-subidas">
+                                    <img src="images/pg_5.jpg">
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+                </div>
+                <div class="tercera-caja clearfix">
+                    <div class="block-gris comentarios">
+                        <div class="subcaja-comentarios">
+                            <fieldset>
+                                <legend>Comentarios</legend>
+                                <div class="lista-comentarios">
+                                    <div class="comentario-contenedor">
+                                        <div class="comentario-texto">Juegas normalmente online? para echar unas partidillas, agregame como amigo si quieres y hablamos para agregarnos
+
+                                        </div>
+                                        <div class="comentario-username">ArrozFrito61</div>
+                                    </div>
+                                    <div class="comentario-contenedor">
+                                        <div class="comentario-texto">Subes también videos a youtube de tus partidas??
+
+                                        </div>
+                                        <div class="comentario-username">Cierva4567</div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ventanaLogin">
+                <div class="containerVentanaLogin">
+                    <div style="margin-bottom: 15px; text-align: center;">
+                        <span style="font-size: 20px;">Iniciar Sesión</span>
+                    </div>
+                    <form action="javascript: void(0);" id="formularioInicioSesion" method="POST">
+                        <div style="margin-bottom: 15px;">
+                            <div class="clearfix">
+                                <label>Nombre de usuario</label>
+                                <input type="text" name="nombreUsuario" id="nombreUsuario" style="margin-bottom: 5px;"/>
+                            </div>
+                            <div class="clearfix">
+                                <label>Contraseña</label>
+                                <input type="password" name="passUsuario" id="passUsuario"/>
+                            </div>
+                        </div>
+                        <div>
+                            <input id="enviarDatosLogin" type="submit" value="Entrar" />
+                        </div>
+                    </form>
+                    <img id="iconoCerrarModalLogin" src="images/close.svg">
+                </div>
+            </div>
+            <div class="ventanaRegistro">
+                <div class="containerVentanaRegistro">
+                    <div style="margin-bottom: 15px; text-align: center;">
+                        <span style="font-size: 20px;">Registrate</span>
+                    </div>
+                    <form action="javascript: void(0);" id="formularioRegistro" method="POST">
+                        <div style="margin-bottom: 15px;">
+                                <div class="clearfix">
+                                    <label>Nombre de usuario</label>
+                                    <input type="text" required name="nombreUsuarioRegistro" id="nombreUsuarioRegistro"/>
+                                </div>
+                                <div class="clearfix">
+                                    <label>Email</label>
+                                    <input type="email" required name="emailRegistro" id="emailRegistro"/>
+                                </div>
+                                <div class="clearfix">
+                                    <label>Contraseña</label>
+                                    <input type="password" required pattern="[a-z0-9]{0,8}" title="Válidos números y letras hasta 8 caracteres"name="contrasenaRegistro" id="contrasenaRegistro"/>
+                                </div>
+                                <div class="clearfix">
+                                    <label>Comprobacion de contraseña</label>
+                                    <input type="password" required pattern="[a-z0-9]{0,8}" title="Válidos números y letras hasta 8 caracteres" name="contrasena2Registro" id="contrasena2Registro"/>
+                                </div>
+                            <div class="clearfix">
+                                <input type="checkbox" name="condicionesRegistro" id="condicionesRegistro" required value="condiciones">
+                                <span class="condicionesRegistro">Acepto los Terminos y Condiciones de uso de esta Pagina</span>
+                                <input id="enviarDatosRegistro" type="submit" value="Registrar" />
+                            </div>
+                        </div>
+                        <div class="errorRegistro" id="errorContrasenaIguales">Las dos  contraseñas deben ser iguales</div>
+                    </form>
+                    <img id="iconoCerrarModalRegistro" src="images/close.svg">
+                </div>
+            </div>
+        </section>
+        <section class="seccion-footer">
+            <div class="footer"> <a class="footer-link" href="https://opensource.org/licenses/MIT" target="_blank">Copyright</a> <a class="footer-link" href="http://store.steampowered.com/" target="_blank">Steam</a> <a class="footer-link" href="https://www.reddit.com/r/borderlands" target="_blank">Reddit</a>
+            <p> Derechos Pertenecientes a Gearbox Software. </p>
+            </div>
+        </section>
+    </body>
+
+
+</html>

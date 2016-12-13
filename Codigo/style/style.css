@@ -655,6 +655,11 @@ legend{
     border-radius: 5px;
 }
 
+.colorOr{
+    color: #ffa804;
+    text-decoration: none;
+}
+
 
 /*inicio estilos ventana modal login y registro*/
 .ventanaLogin{

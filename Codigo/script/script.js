@@ -206,7 +206,6 @@ function enviarComentarios(){
 
 function cerrarSesion(){
     $('#botonCerrar').click(function(){
-        //console.log("holi");
         window.location.reload();
     });
 }
