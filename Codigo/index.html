@@ -12,6 +12,14 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="script/js.cookie.js"></script>
     <script src="script/script.js"></script>
+
+    <script type='text/javascript' src='unitegallery/js/jquery-11.0.min.js'></script>
+    <script type='text/javascript' src='unitegallery/js/unitegallery.min.js'></script>
+
+    <link rel='stylesheet' href='unitegallery/css/unite-gallery.css' type='text/css' />
+
+    <script type='text/javascript' src='unitegallery/themes/tiles/ug-theme-tiles.js'></script>
+
     <title>Borderlands Fanpage</title>
 </head>
 
@@ -21,8 +29,8 @@
             <ul class="menu">
                 <li><a href="#"><i class="micon ion-navicon-round"></i></a>
                     <ul class="sub-menu">
-                        <li><a href="#">Bienvenida</a></li>
-                        <li><a href="#">Galeria</a></li>
+                        <li><a href="pagina_inicio.html">Bienvenida</a></li>
+                        <li><a href="galeria.html">Galeria</a></li>
                         <li><a href="#">Ajustes</a></li>
                         <li><a href="#">Amigos</a></li>
                         <li><a href="#">Artistas Añadidos</a></li>
@@ -43,6 +51,8 @@
             </ul>
             <div class="row">
 
+
+
                 <h1>BORDELANDS</h1>
                 <input class="busqueda"><a href="galeria.html" style="color: #ffa804;"><i class="ion-search"></i></a></input>
                 <button class="boton" id="botonEntrar">Log In</button>
@@ -52,95 +62,40 @@
             </div>
         </div>
     </header>
-    <section style="margin: 50px 0;">
-        <div class="row">
-            <div class="block-gris clearfix">
-                <div class="usuario-head-imagen">
-                    <div class="usuario-head">
-                        <div class="anadir-artista ocultarUsuario"><i class="ion-star"></i>Añadir artista</div>
-                        <div class="username"><i class="ion-person"></i>Username</div>
-                        <div class="anadir-amigo ocultarUsuario amigoNuevo"><i class="ion-person-add"></i><span>Añadir amigo</span></div>
-                    </div>
-                    <div class="usuario-imagen">
-                        <fieldset>
-                            <legend>Imagen destacada</legend>
-                            <img src="images/pg_2.jpg">
-                        </fieldset>
-                    </div>
-                </div>
-                <div class="usuario-detalle">
-                    <div class="tipo-usuario"><i class="ion-person"></i>Tipo de usuario:</div>
-                    <div class="fecha-nacimiento-usuario"><i class="ion-calendar"></i>F. de Nacimiento:</div>
-                    <div class="pais-usuario"><i class="ion-flag"></i>Pais:</div>
-                    <div class="contacto-usuario"><i class="ion-ios-telephone"></i>Contacto:</div>
-                    <div class="amigos-compartidos-usuario"><i class="ion-person-stalker"></i>Amigos compartidos:</div>
-                    <br/>
-                    <br/>
-                    <div class="anadir-como-amigo ocultarUsuario amigoNuevo"><i class="ion-person-add"></i><span>Añadir amigo</span></div>
-                    <div class="chat-privado"><i class="ion-chatbubbles"></i>Chat Privado</div>
-                    <div class="mensaje-usuario"><i class="ion-email"></i>Mensaje</div>
-                    <div class="biografia-usuario">
-                        <fieldset>
-                            <legend>Biografia Usuario</legend>
-                            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec semper orci. Aliquam tincidunt, arcu a imperdiet.
-                                </span>
-                        </fieldset>
-                    </div>
-                </div>
-            </div>
-            <div class="segunda-caja clearfix">
-                <div class="block-gris ultimas-subidas">
-                    <div class="subcaja-ultimas-subidas">
-                        <fieldset>
-                            <legend>Ultimas subidas</legend>
-                            <div class="foto1-ultimas-subidas">
-                                <img src="images/pg_3.jpg">
-                            </div>
-                            <div class="foto2-ultimas-subidas">
-                                <img src="images/pg_4.jpg">
-                            </div>
-                        </fieldset>
-                    </div>
-                </div>
-                <div class="block-gris hacer-pedido ocultarUsuario">
-                    <div class="subcaja-hacer-pedido">
-                        <fieldset>
-                            <legend>Hacer pedido</legend>
-                            <textarea>Manda tu pedido a este Artista!</textarea>
-                            <div>
-                                <button>Enviar</button>
-                            </div>
-                        </fieldset>
-                    </div>
-                </div>
-            </div>
-            <div class="tercera-caja clearfix">
-                <div class="block-gris comentarios">
-                    <div class="subcaja-comentarios">
-                        <fieldset>
-                            <legend>Comentarios</legend>
-                            <div class="lista-comentarios">
-                                <div class="comentario-contenedor">
-                                    <div class="comentario-texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                    </div>
-                                    <div class="comentario-username">Username 1</div>
-                                </div>
-                                <div class="comentario-contenedor">
-                                    <div class="comentario-texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                    </div>
-                                    <div class="comentario-username">Username 2</div>
-                                </div>
-                            </div>
-                        </fieldset>
-                    </div>
-                </div>
-            </div>
+    <section class=" row titulo-seccion">
+        <h1>NOVEDADES</h1>
+    </section>
+    <section class="row seccion-galeria">
+        <div id="gallery" style="display:none;">
+
+            <a class="imagen-galeria" href="#">
+                <img alt="Borderlands Logo" src="images/borderlands-logo.png" data-image="images/borderlands-logo.png" data-description="El logo de BORDERLANDS">
+            </a>
+            <a href="#">
+                <img alt="Tiny Tina" src="images/tiny%20tina_th.png" data-image="images/tiny%20tina.png" data-description="Esta es Tiny Tina Slice" style="display:none">
+            </a>
+            <a class="imagen-galeria" href="#">
+                <img alt="Slappy" src="images/pg_2_th.jpg" data-image="images/pg_2.jpg" data-description="Aqui vive Slappy" style="display:none">
+            </a>
+            <a class="imagen-galeria" href="#">
+                <img alt="Bandidos" src="images/pg_3_th.jpg" data-image="images/pg_3.jpg" data-description="Borderlands 1" style="display:none">
+            </a>
+            <a class="imagen-galeria" href="#">
+                <img alt="Maya" src="images/sirenPortrait_th.png" data-image="images/sirenPortrait.png" data-description="Esta es Maya" style="display:none">
+            </a>
+            <a class="imagen-galeria" href="#">
+                <img alt="Enanos!!" src="images/pg_8_th.jpg" data-image="images/pg_8.jpg" data-description="DLC de Tiny Tina" style="display:none">
+            </a>
+            <a class="imagen-galeria" href="#">
+                <img alt="Buenas Vistas" src="images/pg_9_th.jpg" data-image="images/pg_9.jpg" data-description="Algunos skag" style="display:none">
+            </a>
+            <a class="imagen-galeria" href="#">
+                <img alt="Zer0" src="images/assassinPortrait_th.png" data-image="images/assassinPortrait.png" data-description="Este es Zer0 Slice" style="display:none">
+            </a>
+            <a class="imagen-galeria" href="#">
+                <img alt="KRIEG <3" src="images/Krieg_th.png" data-image="images/Krieg.png" data-description="MEAT BOY" style="display:none">
+            </a>
         </div>
-
-
-
-
-
         <div class="ventanaLogin">
             <div class="containerVentanaLogin">
                 <div style="margin-bottom: 15px; text-align: center;">
@@ -198,7 +153,33 @@
                 <img id="iconoCerrarModalRegistro" src="images/close.svg">
             </div>
         </div>
+        <script type="text/javascript">
+            jQuery(document).ready(function () {
+
+                jQuery("#gallery").unitegallery({
+                    tiles_type: "justified",
+                    tile_enable_icons: true,
+                    tile_enable_overlay: true,
+                    tile_show_link_icon: true,
+                    tile_enable_textpanel: true,
+                    tile_textpanel_source: "title",
+                    tile_textpanel_appear_type: "slide",
+                    tile_textpanel_position: "inside_bottom",
+                    tile_textpanel_offset: 0,
+                    theme_gallery_padding: 20,
+                    tiles_justified_space_between: 20,
+                    tiles_justified_row_height: 300
+                });
+
+            });
+        </script>
     </section>
+    <section class="more-section">
+        <button class="boton" id="botonEntrar">Log In</button>
+        <button class="boton more">Más</button>
+        <button class="boton" id="botonRegistrar">Sign In</button>
+    </section>
+
     <section class="seccion-footer">
         <div class="footer"> <a class="footer-link" href="https://opensource.org/licenses/MIT" target="_blank">Copyright</a> <a class="footer-link" href="http://store.steampowered.com/" target="_blank">Steam</a> <a class="footer-link" href="https://www.reddit.com/r/borderlands" target="_blank">Reddit</a>
             <p> Derechos Pertenecientes a Gearbox Software. </p>
@@ -208,3 +189,6 @@
 
 
 </html>
+<!--
+
+-->

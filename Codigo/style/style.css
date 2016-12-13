@@ -1,5 +1,3 @@
-
-
 * {
     margin: 0;
     padding: 0;
@@ -43,21 +41,22 @@ html {
 
 /********** HEADER ***********/
 
+
 /*Header*/
 
 .cabecera {
     text-align: center;
     display: block;
     background-color: black;
-
 }
 
-.cabecera h1{
+.cabecera h1 {
     font-size: 125%;
     margin: 5px;
     float: left;
 }
-.cabecera i{
+
+.cabecera i {
     margin: 10px 5px 10px 5px;
     font-size: 140%;
     float: left;
@@ -82,16 +81,21 @@ html {
     height: 25px;
     margin: 10px;
 }
-.boton:hover{
+
+.boton:hover {
     background-color: #ffaf1b;
 }
-.boton a{
+
+a {
     text-decoration: none;
     color: black;
 }
-.boton a:hover, a:active{
+
+a:hover,
+a:active {
     color: black;
 }
+
 
 /*Letras*/
 
@@ -107,16 +111,21 @@ h2 {
 
 /************** END HEADER ************/
 
+
 /************** Galeria ***************/
+
 .seccion-galeria {
     margin-top: 25px;
 }
+
 .titulo-seccion {
     text-align: center;
-
 }
 
+
 /************* fin Galeria ************/
+
+
 /*footer*/
 
 .footer {
@@ -149,10 +158,7 @@ h2 {
 }
 
 
-
 /*******************************/
-
-
 
 .expandir {
     display: block;
@@ -374,40 +380,45 @@ label.light {
 form {
     max-width: 550px;
 }
-.study-info{
+
+.study-info {
     display: none;
 }
 
 
-
-
-
-
 /*CSS DE ADRIAAAAAAAAAAAAAAAAAAAAAAAAAAAAN*/
 
+
 /*******USUARIO***********/
+
+
 /*
 *
 *
 *
 */
-.block-gris{
+
+.block-gris {
     background-color: #1E1E1E;
     color: #1E1E1E;
 }
-.block-gris img{
+
+.block-gris img {
     width: 100%;
 }
-.block-gris i{
+
+.block-gris i {
     margin-right: 5px;
 }
-.usuario-head-imagen{
+
+.usuario-head-imagen {
     width: calc(70% - 30px);
     float: left;
     margin: 20px;
-     margin-right: 10px;
+    margin-right: 10px;
 }
-.usuario-detalle{
+
+.usuario-detalle {
     background-color: #606060;
     width: calc(30% - 30px);
     float: left;
@@ -415,89 +426,108 @@ form {
     margin-left: 10px;
     color: #1E1E1E;
 }
-.usuario-detalle div{
+
+.usuario-detalle div {
     padding: 5px 10px;
 }
-.usuario-imagen{
+
+.usuario-imagen {
     margin-top: 20px;
     background-color: #606060;
 }
-.usuario-head{
+
+.usuario-head {
     color: #ffa804;
-            }
-.usuario-head div{
+}
+
+.usuario-head div {
     display: inline-block;
     width: 32%;
     text-align: center;
 }
-.segunda-caja{
+
+.segunda-caja {
     margin-top: 20px;
 }
-.ultimas-subidas{
+
+.ultimas-subidas {
     width: calc(70% - 10px);
     float: left;
     margin-right: 10px;
 }
-.ultimas-subidas-3{
+
+.ultimas-subidas-3 {
     width: 100%;
     float: left;
 }
-.hacer-pedido{
+
+.hacer-pedido {
     width: calc(30% - 10px);
     float: left;
     margin-left: 10px;
 }
-.subcaja-ultimas-subidas{
+
+.subcaja-ultimas-subidas {
     margin: 20px;
     background-color: #606060;
 }
-.subcaja-hacer-pedido{
+
+.subcaja-hacer-pedido {
     margin: 20px;
     background-color: #606060;
 }
-.foto1-ultimas-subidas{
+
+.foto1-ultimas-subidas {
     width: calc(50% - 30px);
     float: left;
     margin: 20px;
     margin-right: 10px;
 }
-.foto2-ultimas-subidas{
+
+.foto2-ultimas-subidas {
     width: calc(50% - 30px);
     float: left;
     margin: 20px;
     margin-right: 10px;
 }
-.ultimas-subidas-3 .foto1-ultimas-subidas{
+
+.ultimas-subidas-3 .foto1-ultimas-subidas {
     width: calc(33% - 30px);
     float: left;
     margin: 20px;
     margin-right: 10px;
 }
-.ultimas-subidas-3 .foto2-ultimas-subidas{
+
+.ultimas-subidas-3 .foto2-ultimas-subidas {
     width: calc(33% - 30px);
     float: left;
     margin: 20px;
     margin-right: 10px;
 }
-.ultimas-subidas-3 .foto3-ultimas-subidas{
+
+.ultimas-subidas-3 .foto3-ultimas-subidas {
     width: calc(33% - 30px);
     float: left;
     margin: 20px;
     margin-right: 10px;
 }
-fieldset{
+
+fieldset {
     border-color: transparent;
 }
-legend{
+
+legend {
     color: #ffa804;
 }
-.subcaja-hacer-pedido textarea{
+
+.subcaja-hacer-pedido textarea {
     border: 1px solid #1E1E1E;
     resize: none;
     padding: 5px;
     margin-bottom: 10px;
 }
-.subcaja-hacer-pedido button{
+
+.subcaja-hacer-pedido button {
     margin: 0 auto;
     background-color: #ffa804;
     color: #1E1E1E;
@@ -506,28 +536,35 @@ legend{
     border: 0px solid #1e1e1e;
     border-radius: 5px;
 }
-.tercera-caja{
+
+.tercera-caja {
     margin-top: 20px;
 }
-.tercera-caja .comentarios{
+
+.tercera-caja .comentarios {
     width: 100%;
     float: left;
     margin: 0 !important;
 }
-.subcaja-comentarios{
+
+.subcaja-comentarios {
     margin: 20px;
     background-color: #606060;
 }
-.comentario-contenedor{
+
+.comentario-contenedor {
     width: 80%;
     margin-bottom: 30px;
 }
-.comentario-username{
+
+.comentario-username {
     text-align: right;
 }
+
+
 /***********************POOOOOOOOOST**************/
 
-.tituloFoto{
+.tituloFoto {
     background-color: #606060;
     width: calc(66% - 10px);
     margin-top: 50px;
@@ -535,87 +572,94 @@ legend{
     margin-right: 10px;
 }
 
-.masAutor{
+.masAutor {
     background-color: #606060;
     width: calc(33% - 10px);
     margin-top: 50px;
     float: left;
     margin-left: 10px;
 }
-.nombreTitulo{
+
+.nombreTitulo {
     margin-left: 20px;
     margin-top: 10px;
 }
 
-.imgArea{
+.imgArea {
     float: left;
     margin: 20px;
     margin-right: 20px;
     position: relative;
-
 }
 
-.imgArea img{
+.imgArea img {
     width: 100%;
 }
 
-.imgArea i{
+.imgArea i {
     position: absolute;
     bottom: 0;
     right: 5px;
     font-size: 30px;
 }
-.moreAt{
+
+.moreAt {
     margin-top: 10px;
 }
-.fotoP{
+
+.fotoP {
     width: calc(50% - 40px);
     float: left;
     margin-right: 20px;
     margin-left: 20px;
 }
 
-.imgArea2{
+.imgArea2 {
     float: left;
     margin-top: 10px;
     margin-bottom: 10px;
 }
-.imgArea2 img{
+
+.imgArea2 img {
     width: 100%;
 }
-.coments{
+
+.coments {
     width: calc(66% - 10px);
     margin-top: 50px;
     float: left;
     margin-right: 10px;
 }
 
-.descripcion{
+.descripcion {
     background-color: #606060;
     width: 100%;
     float: left;
     margin-bottom: 25px;
 }
 
-.txtDes{
+.txtDes {
     color: black;
     margin: 20px;
     text-align: justify;
 }
-.usernameIc{
+
+.usernameIc {
     margin-left: 30px;
 }
+
 .usernameIc i {
     color: #ffa804;
 }
-.escribirComentario{
+
+.escribirComentario {
     background-color: #606060;
     height: 100px;
     width: 100%;
     float: left;
 }
 
-.contenidoSimilar{
+.contenidoSimilar {
     background-color: #606060;
     width: calc(33% - 10px);
     margin-top: 50px;
@@ -623,7 +667,7 @@ legend{
     margin-left: 10px;
 }
 
-.comentarioGuardados{
+.comentarioGuardados {
     background-color: #1e1e1e;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -631,14 +675,13 @@ legend{
     width: calc(66% - 10px);
     margin-right: 10px;
     text-align: justify;
-
 }
 
-.txtArea{
+.txtArea {
     padding: 15px;
 }
 
-.escComent{
+.escComent {
     height: 45px;
     padding: 2px;
     width: 90%;
@@ -646,7 +689,7 @@ legend{
     float: left;
 }
 
-.botonEnviar{
+.botonEnviar {
     float: left;
     margin: 10px;
     width: 50px;
@@ -655,14 +698,15 @@ legend{
     border-radius: 5px;
 }
 
-.colorOr{
+.colorOr {
     color: #ffa804;
     text-decoration: none;
 }
 
 
 /*inicio estilos ventana modal login y registro*/
-.ventanaLogin{
+
+.ventanaLogin {
     display: none;
     position: fixed;
     background-color: rgba(255, 255, 255, 0.7);
@@ -672,18 +716,22 @@ legend{
     left: 0;
     box-shadow: 0px 0px 10px 5px #000;
 }
-.ventanaLogin form{
+
+.ventanaLogin form {
     background-color: transparent;
 }
-.ventanaLogin input{
+
+.ventanaLogin input {
     margin: 0 auto;
     display: block;
 }
-#enviarDatosLogin{
+
+#enviarDatosLogin {
     width: auto;
     cursor: pointer;
 }
-.containerVentanaLogin{
+
+.containerVentanaLogin {
     padding: 30px;
     background-color: #1E1E1E;
     position: absolute;
@@ -691,30 +739,34 @@ legend{
     top: calc((100% - 246px) / 2);
     left: calc((100% - 500px) / 2);
 }
-#iconoCerrarModalLogin{
+
+#iconoCerrarModalLogin {
     width: 25px;
     position: absolute;
     top: 10px;
     right: 10px;
     cursor: pointer;
 }
-#botonEntrar{
+
+#botonEntrar {
     cursor: pointer;
 }
-#formularioInicioSesion label, #formularioInicioSesion input{
+
+#formularioInicioSesion label,
+#formularioInicioSesion input {
     float: left;
     width: 200px;
     padding: 5px;
 }
-#formularioInicioSesion input[type=submit]{
+
+#formularioInicioSesion input[type=submit] {
     float: right;
     background-color: #ffa804;
     border: 0px solid #1e1e1e;
     border-radius: 5px;
 }
 
-
-.ventanaRegistro{
+.ventanaRegistro {
     display: none;
     position: fixed;
     background-color: rgba(255, 255, 255, 0.7);
@@ -724,17 +776,21 @@ legend{
     left: 0;
     box-shadow: 0px 0px 10px 5px #000;
 }
-.ventanaRegistro form{
+
+.ventanaRegistro form {
     background-color: transparent;
 }
-.ventanaRegistro input{
+
+.ventanaRegistro input {
     margin: 0 auto;
     display: block;
 }
-#enviarDatosRegistro{
+
+#enviarDatosRegistro {
     width: auto;
 }
-.containerVentanaRegistro{
+
+.containerVentanaRegistro {
     padding: 30px;
     background-color: #1E1E1E;
     position: absolute;
@@ -744,53 +800,64 @@ legend{
     left: calc((100% - 600px) / 2);
     overflow: auto;
 }
-#iconoCerrarModalRegistro{
+
+#iconoCerrarModalRegistro {
     width: 25px;
     position: absolute;
     top: 10px;
     right: 10px;
     cursor: pointer;
 }
-#botonRegistrar{
+
+#botonRegistrar {
     cursor: pointer;
 }
-#formularioRegistro label, #formularioRegistro input{
+
+#formularioRegistro label,
+#formularioRegistro input {
     float: left;
     width: 200px;
     padding: 5px;
 }
-#formularioRegistro label{
+
+#formularioRegistro label {
     width: 300px;
 }
-#formularioRegistro input[type=submit]{
+
+#formularioRegistro input[type=submit] {
     float: right;
     background-color: #ffa804;
     border: 0px solid #1e1e1e;
     border-radius: 5px;
     width: 100px;
 }
-#formularioRegistro input[type=checkbox]{
+
+#formularioRegistro input[type=checkbox] {
     width: auto;
     margin-top: 5px;
 }
-.errorRegistro{
+
+.errorRegistro {
     display: none;
     background-color: #FF0000;
     margin-bottom: 15px;
     color: #FFF;
     padding: 5px;
 }
-.condicionesRegistro{
+
+.condicionesRegistro {
     font-size: 12px;
     float: left;
     margin-left: 5px;
     margin-top: 5px;
 }
 
-.ocultarUsuario{
+.ocultarUsuario {}
 
-}
+
 /*fin estilos ventana modal login y registro*/
+
+
 /*++++++ pagina principal +++++*/
 
 .welcome_to_the_fiutur {
@@ -919,30 +986,33 @@ legend{
 
 
 /*++++++ fin pagina principal +++++*/
+
 .fav {
     border-style: none;
     background-color: rgba(255, 255, 255, 0);
     color: #ffa804 !important;
-
 }
-.fav i{
+
+.fav i {
     color: #ffa804;
 }
+
+
 /****************************************************/
 
-
 .menu {
-
     margin: 0;
     height: 25px;
     width: 30px;
 }
-.micon{
+
+.micon {
     display: inline-block;
     margin: 10px 5px 10px 5px;
     font-size: 140%;
     float: left;
 }
+
 .menu li {
     display: inline-block;
     position: relative;
@@ -1008,15 +1078,13 @@ legend{
     top: 0px;
 }
 
-
 .more-section {
     text-align: center;
     margin: 25px auto 25px auto;
 }
 
-.more-section button{
+.more-section button {
     height: 30px;
     width: 100px;
     font-size: 120%;
 }
-

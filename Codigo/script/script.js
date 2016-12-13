@@ -1,5 +1,7 @@
 $(document).ready(function () {
-    $('.ocultarUsuario').css({"display":"none"});
+    $('.ocultarUsuario').css({
+        "display": "none"
+    });
     abrirCerrarModalLogin();
     abrirCerrarModalRegistro();
     enviarDatosInicioSesion();
@@ -36,10 +38,12 @@ function abrirCerrarModalRegistro() {
 
 function enviarDatosInicioSesion() {
     $('#enviarDatosLogin').click(function () {
-       var estado = checkCookie($('#nombreUsuario').val(), $('#passUsuario').val());
+        var estado = checkCookie($('#nombreUsuario').val(), $('#passUsuario').val());
         if (estado == true) {
             $('#textoNombreUsuario').text("@" + $('#nombreUsuario').val());
-            $('.ocultarUsuario').css({"display":"inline-block"});
+            $('.ocultarUsuario').css({
+                "display": "inline-block"
+            });
             $('#botonEntrar').hide();
             $('#botonRegistrar').hide();
             $('.ventanaLogin').fadeOut();
@@ -117,8 +121,9 @@ function chechCamposRegistro() {
 
     });
 }
-function like(){
-$(".fav").click(function() {
+
+function like() {
+    $(".fav").click(function () {
         if (this.firstChild.style.color == "red") {
             this.firstChild.style.color = "#ffa804";
         } else {
@@ -127,8 +132,8 @@ $(".fav").click(function() {
     });
 }
 
-function anadirAmigo(){
-    $(".amigoNuevo").click(function() {
+function anadirAmigo() {
+    $(".amigoNuevo").click(function () {
 
         if ($(".amigoNuevo span").html() == "Cancelar Solicitud") {
             $(".amigoNuevo span").html("Añadir amigo");
@@ -141,10 +146,10 @@ function anadirAmigo(){
         }
 
     });
-    $(".amigoNuevoSin").click(function() {
-         if ($(".amigoNuevoSin i").hasClass("ion-person-add")) {
+    $(".amigoNuevoSin").click(function () {
+        if ($(".amigoNuevoSin i").hasClass("ion-person-add")) {
             $(".amigoNuevoSin i").addClass("ion-close");
-             $(".amigoNuevoSin i").removeClass("ion-person-add");
+            $(".amigoNuevoSin i").removeClass("ion-person-add");
         } else {
             $(".amigoNuevoSin i").removeClass("ion-close");
             $(".amigoNuevoSin i").addClass("ion-person-add");
@@ -171,10 +176,10 @@ function menu() {
         });
 
     });
-    $(".amigoNuevoSin").click(function() {
-         if ($(".amigoNuevoSin i").hasClass("ion-person-add")) {
+    $(".amigoNuevoSin").click(function () {
+        if ($(".amigoNuevoSin i").hasClass("ion-person-add")) {
             $(".amigoNuevoSin i").addClass("ion-close");
-             $(".amigoNuevoSin i").removeClass("ion-person-add");
+            $(".amigoNuevoSin i").removeClass("ion-person-add");
         } else {
             $(".amigoNuevoSin i").removeClass("ion-close");
             $(".amigoNuevoSin i").addClass("ion-person-add");
@@ -183,29 +188,29 @@ function menu() {
     });
 }
 
-function share(){
-    $('.iconshare').click(function(){
+function share() {
+    $('.iconshare').click(function () {
         alert("La imagen ha sido compartida");
     });
 }
 
-function enviarComentarios(){
-    $('#botonEnviarComentario').click(function(){
+function enviarComentarios() {
+    $('#botonEnviarComentario').click(function () {
         var estado = checkCookie($('#nombreUsuario').val(), $('#passUsuario').val());
-        if(estado == false){
+        if (estado == false) {
             alert("Debe estar registrado para comentar");
-        } else{
-        var comentario = $("#cajaTextoComentario").val();
-        var usuario = $('#nombreUsuario').val();
-        $("#cargarComentarios").append('<div class="comentario-contenedor"><div class="comentario-texto">'+comentario+'</div><div class="comentario-username">'+usuario+'</div></div>');
-        $("#cajaTextoComentario").val("");
+        } else {
+            var comentario = $("#cajaTextoComentario").val();
+            var usuario = $('#nombreUsuario').val();
+            $("#cargarComentarios").append('<div class="comentario-contenedor"><div class="comentario-texto">' + comentario + '</div><div class="comentario-username">' + usuario + '</div></div>');
+            $("#cajaTextoComentario").val("");
         }
     });
 
 }
 
-function cerrarSesion(){
-    $('#botonCerrar').click(function(){
+function cerrarSesion() {
+    $('#botonCerrar').click(function () {
         window.location.reload();
     });
 }

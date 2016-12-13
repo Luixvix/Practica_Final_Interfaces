@@ -54,7 +54,7 @@
 
 
                 <h1>BORDELANDS</h1>
-                <input class="busqueda"><i class="ion-search"></i></input>
+                <input class="busqueda"><a href="galeria.html" style="color: #ffa804;"><i class="ion-search"></i></a></input>
                 <button class="boton" id="botonEntrar">Log In</button>
                 <button class="boton" id="botonRegistrar">Sign In</button>
             <span class="ocultarUsuario" id="textoNombreUsuario"></span>
@@ -62,38 +62,36 @@
             </div>
         </div>
     </header>
-    <section class=" row titulo-seccion">
-        <h1>NOVEDADES</h1>
-    </section>
+
     <section class="row seccion-galeria">
         <div id="gallery" style="display:none;">
 
             <a class="imagen-galeria" href="#">
-                <img alt="Lemon Slice" src="images/borderlands-logo.png" data-image="images/borderlands-logo.png" data-description="This is a Lemon Slice">
+                <img alt="Bandidos" src="images/pg_3_th.jpg" data-image="images/pg_3.jpg" data-description="Borderlands 1">
             </a>
             <a href="#">
-                <img alt="Lemon Slice" src="images/tiny%20tina_th.png" data-image="images/tiny%20tina.png" data-description="This is a Lemon Slice" style="display:none">
+                <img alt="Axton" src="images/commandoPortrait_th.png" data-image="images/commandoPortrait_th.png" data-description="este es axton" style="display:none">
             </a>
             <a class="imagen-galeria" href="#">
-                <img alt="Lemon Slice" src="images/pg_2_th.jpg" data-image="images/pg_2.jpg" data-description="This is a Lemon Slice" style="display:none">
+                <img alt="Zer0 Badass" src="images/pg_6_th.jpg" data-image="images/pg_6.jpg" data-description="Zero vs Bots" style="display:none">
             </a>
             <a class="imagen-galeria" href="#">
-                <img alt="Lemon Slice" src="images/pg_3_th.jpg" data-image="images/pg_3.jpg" data-description="This is a Lemon Slice" style="display:none">
+                <img alt="Buscacamaras" src="images/pg_5_th.jpg" data-image="images/pg_5.jpg" data-description="Buscacamaras contra torosimios" style="display:none">
             </a>
             <a class="imagen-galeria" href="#">
-                <img alt="Lemon Slice" src="images/sirenPortrait_th.png" data-image="images/sirenPortrait.png" data-description="This is a Lemon Slice" style="display:none">
+                <img alt="Maya" src="images/sirenPortrait_th.png" data-image="images/sirenPortrait.png" data-description="Esta es Maya" style="display:none">
             </a>
             <a class="imagen-galeria" href="#">
-                <img alt="Lemon Slice" src="images/pg_8_th.jpg" data-image="images/pg_8.jpg" data-description="This is a Lemon Slice" style="display:none">
+                <img alt="Enanos!!" src="images/pg_8_th.jpg" data-image="images/pg_8.jpg" data-description="DLC de Tiny Tina" style="display:none">
             </a>
             <a class="imagen-galeria" href="#">
-                <img alt="Lemon Slice" src="images/pg_9_th.jpg" data-image="images/pg_9.jpg" data-description="This is a Lemon Slice" style="display:none">
+                <img alt="Junkyard" src="images/pg_1_th.png" data-image="images/pg_1.png" data-description="Basura" style="display:none">
             </a>
             <a class="imagen-galeria" href="#">
-                <img alt="Lemon Slice" src="images/assassinPortrait_th.png" data-image="images/assassinPortrait.png" data-description="This is a Lemon Slice" style="display:none">
+                <img alt="Zer0" src="images/assassinPortrait_th.png" data-image="images/assassinPortrait.png" data-description="Este es Zer0 Slice" style="display:none">
             </a>
             <a class="imagen-galeria" href="#">
-                <img alt="Lemon Slice" src="images/Krieg_th.png" data-image="images/Krieg.png" data-description="This is a Lemon Slice" style="display:none">
+                <img alt="Arid nexus" src="images/pg_4_th.jpg" data-image="images/pg_4.jpg" data-description="Captura desdde Arid Nexus" style="display:none">
             </a>
         </div>
         <div class="ventanaLogin">
@@ -159,7 +157,7 @@
                 jQuery("#gallery").unitegallery({
                     tiles_type: "justified",
                     tile_enable_icons: true,
-                    tile_enable_overlay: false,
+                    tile_enable_overlay: true,
                     tile_show_link_icon: true,
                     tile_enable_textpanel: true,
                     tile_textpanel_source: "title",

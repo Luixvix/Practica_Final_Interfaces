@@ -42,7 +42,7 @@
             </ul>
             <div class="row">
                 <h1>BORDELANDS</h1>
-                <input class="busqueda"><i class="ion-search"></i></input>
+                <input class="busqueda"><a href="galeria.html" style="color: #ffa804;"><i class="ion-search"></i></a></input>
                 <button class="boton" id="botonEntrar">Log In</button>
                 <button class="boton" id="botonRegistrar">Sign In</button>
                 <span class="ocultarUsuario" id="textoNombreUsuario"></span>
@@ -137,84 +137,84 @@
         <div class="row">
             <div class="comentarioGuardados">
                 <div class="subcaja-comentarios">
-                            <fieldset>
-                                <legend>Comentarios</legend>
-                                <div id="cargarComentarios" class="lista-comentarios">
-                                    <div class="comentario-contenedor">
-                                        <div class="comentario-texto">
-                                        </div>
-                                        <div class="comentario-username"></div>
-                                    </div>
-                                    <div class="comentario-contenedor">
-                                        <div class="comentario-texto">El mejor arma para mí, cual fue el resultado????</div>
-                                        <div class="comentario-username">AdriánP</div>
-                                    </div>
-                                        <div class="comentario-contenedor">
-                                        <div class="comentario-texto">Pues la verdad es que me salió muy bien, 18 - 2</div>
-                                        <div class="comentario-username">PacoBrdlnds</div>
-                                    </div>
+                    <fieldset>
+                        <legend>Comentarios</legend>
+                        <div id="cargarComentarios" class="lista-comentarios">
+                            <div class="comentario-contenedor">
+                                <div class="comentario-texto">
                                 </div>
-                            </fieldset>
+                                <div class="comentario-username"></div>
+                            </div>
+                            <div class="comentario-contenedor">
+                                <div class="comentario-texto">El mejor arma para mí, cual fue el resultado????</div>
+                                <div class="comentario-username">AdriánP</div>
+                            </div>
+                            <div class="comentario-contenedor">
+                                <div class="comentario-texto">Pues la verdad es que me salió muy bien, 18 - 2</div>
+                                <div class="comentario-username">PacoBrdlnds</div>
+                            </div>
                         </div>
+                    </fieldset>
+                </div>
             </div>
         </div>
-            <div class="ventanaLogin">
-                <div class="containerVentanaLogin">
-                    <div style="margin-bottom: 15px; text-align: center;">
-                        <span style="font-size: 20px;">Iniciar Sesión</span>
-                    </div>
-                    <form action="javascript: void(0);" id="formularioInicioSesion" method="POST">
-                        <div style="margin-bottom: 15px;">
-                            <div class="clearfix">
-                                <label>Nombre de usuario</label>
-                                <input type="text" name="nombreUsuario" id="nombreUsuario" style="margin-bottom: 5px;"/>
-                            </div>
-                            <div class="clearfix">
-                                <label>Contraseña</label>
-                                <input type="password" name="passUsuario" id="passUsuario"/>
-                            </div>
-                        </div>
-                        <div>
-                            <input id="enviarDatosLogin" type="submit" value="Entrar" />
-                        </div>
-                    </form>
-                    <img id="iconoCerrarModalLogin" src="images/close.svg">
+        <div class="ventanaLogin">
+            <div class="containerVentanaLogin">
+                <div style="margin-bottom: 15px; text-align: center;">
+                    <span style="font-size: 20px;">Iniciar Sesión</span>
                 </div>
-            </div>
-            <div class="ventanaRegistro">
-                <div class="containerVentanaRegistro">
-                    <div style="margin-bottom: 15px; text-align: center;">
-                        <span style="font-size: 20px;">Registrate</span>
-                    </div>
-                    <form action="javascript: void(0);" id="formularioRegistro" method="POST">
-                        <div style="margin-bottom: 15px;">
-                                <div class="clearfix">
-                                    <label>Nombre de usuario</label>
-                                    <input type="text" required name="nombreUsuarioRegistro" id="nombreUsuarioRegistro"/>
-                                </div>
-                                <div class="clearfix">
-                                    <label>Email</label>
-                                    <input type="email" required name="emailRegistro" id="emailRegistro"/>
-                                </div>
-                                <div class="clearfix">
-                                    <label>Contraseña</label>
-                                    <input type="password" required pattern="[a-z0-9]{0,8}" title="Válidos números y letras hasta 8 caracteres"name="contrasenaRegistro" id="contrasenaRegistro"/>
-                                </div>
-                                <div class="clearfix">
-                                    <label>Comprobacion de contraseña</label>
-                                    <input type="password" required pattern="[a-z0-9]{0,8}" title="Válidos números y letras hasta 8 caracteres" name="contrasena2Registro" id="contrasena2Registro"/>
-                                </div>
-                            <div class="clearfix">
-                                <input type="checkbox" name="condicionesRegistro" id="condicionesRegistro" required value="condiciones">
-                                <span class="condicionesRegistro">Acepto los Terminos y Condiciones de uso de esta Pagina</span>
-                                <input id="enviarDatosRegistro" type="submit" value="Registrar" />
-                            </div>
+                <form action="javascript: void(0);" id="formularioInicioSesion" method="POST">
+                    <div style="margin-bottom: 15px;">
+                        <div class="clearfix">
+                            <label>Nombre de usuario</label>
+                            <input type="text" name="nombreUsuario" id="nombreUsuario" style="margin-bottom: 5px;" />
                         </div>
-                        <div class="errorRegistro" id="errorContrasenaIguales">Las dos  contraseñas deben ser iguales</div>
-                    </form>
-                    <img id="iconoCerrarModalRegistro" src="images/close.svg">
-                </div>
+                        <div class="clearfix">
+                            <label>Contraseña</label>
+                            <input type="password" name="passUsuario" id="passUsuario" />
+                        </div>
+                    </div>
+                    <div>
+                        <input id="enviarDatosLogin" type="submit" value="Entrar" />
+                    </div>
+                </form>
+                <img id="iconoCerrarModalLogin" src="images/close.svg">
             </div>
+        </div>
+        <div class="ventanaRegistro">
+            <div class="containerVentanaRegistro">
+                <div style="margin-bottom: 15px; text-align: center;">
+                    <span style="font-size: 20px;">Registrate</span>
+                </div>
+                <form action="javascript: void(0);" id="formularioRegistro" method="POST">
+                    <div style="margin-bottom: 15px;">
+                        <div class="clearfix">
+                            <label>Nombre de usuario</label>
+                            <input type="text" required name="nombreUsuarioRegistro" id="nombreUsuarioRegistro" />
+                        </div>
+                        <div class="clearfix">
+                            <label>Email</label>
+                            <input type="email" required name="emailRegistro" id="emailRegistro" />
+                        </div>
+                        <div class="clearfix">
+                            <label>Contraseña</label>
+                            <input type="password" required pattern="[a-z0-9]{0,8}" title="Válidos números y letras hasta 8 caracteres" name="contrasenaRegistro" id="contrasenaRegistro" />
+                        </div>
+                        <div class="clearfix">
+                            <label>Comprobacion de contraseña</label>
+                            <input type="password" required pattern="[a-z0-9]{0,8}" title="Válidos números y letras hasta 8 caracteres" name="contrasena2Registro" id="contrasena2Registro" />
+                        </div>
+                        <div class="clearfix">
+                            <input type="checkbox" name="condicionesRegistro" id="condicionesRegistro" required value="condiciones">
+                            <span class="condicionesRegistro">Acepto los Terminos y Condiciones de uso de esta Pagina</span>
+                            <input id="enviarDatosRegistro" type="submit" value="Registrar" />
+                        </div>
+                    </div>
+                    <div class="errorRegistro" id="errorContrasenaIguales">Las dos contraseñas deben ser iguales</div>
+                </form>
+                <img id="iconoCerrarModalRegistro" src="images/close.svg">
+            </div>
+        </div>
     </section>
 
     <section class="seccion-footer">
@@ -224,4 +224,4 @@
     </section>
 </body>
 
-    </html>
+</html>
