@@ -160,7 +160,6 @@ function anadirAmigo() {
 
 function menu() {
     $(document).ready(function () {
-        var touch = $('#touch-menu');
         var menu = $('.menu');
 
         $(touch).on('click', function (e) {
@@ -176,17 +175,8 @@ function menu() {
         });
 
     });
-    $(".amigoNuevoSin").click(function () {
-        if ($(".amigoNuevoSin i").hasClass("ion-person-add")) {
-            $(".amigoNuevoSin i").addClass("ion-close");
-            $(".amigoNuevoSin i").removeClass("ion-person-add");
-        } else {
-            $(".amigoNuevoSin i").removeClass("ion-close");
-            $(".amigoNuevoSin i").addClass("ion-person-add");
-        }
-
-    });
 }
+
 
 function share() {
     $('.iconshare').click(function () {
@@ -202,7 +192,10 @@ function enviarComentarios() {
         } else {
             var comentario = $("#cajaTextoComentario").val();
             var usuario = $('#nombreUsuario').val();
-            $("#cargarComentarios").append('<div class="comentario-contenedor"><div class="comentario-texto">' + comentario + '</div><div class="comentario-username">' + usuario + '</div></div>');
+            var date = new Date().toLocaleDateString();
+            var hora = new Date().toLocaleTimeString();
+
+            $("#cargarComentarios").append('<div class="comentario-contenedor"><div class="comentario-texto">' + comentario + '</div><div class="comentario-username">' + usuario + " " + date + " " +hora +'</div></div>');
             $("#cajaTextoComentario").val("");
         }
     });

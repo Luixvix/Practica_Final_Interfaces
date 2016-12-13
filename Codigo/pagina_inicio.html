@@ -43,7 +43,7 @@
             </ul>
             <div class="row">
                 <h1>BORDELANDS</h1>
-                <input class="busqueda"><a href="galeria.html" style="color: #ffa804;"><i class="ion-search"></i></a></input>
+                <input class="busqueda"><a href="galeria.html" style="color: #ffa804;"><i class="ion-search"></i></a>
                 <button class="boton" id="botonEntrar">Log In</button>
                 <button class="boton" id="botonRegistrar">Sign In</button>
                 <span class="ocultarUsuario" id="textoNombreUsuario"></span>
@@ -53,7 +53,7 @@
     </header>
     <!--*************************************-->
     <!--** CONTENIDO DE LA PAGINA ***********-->
-    <section class="welcome_to_the_fiutur">
+    <div class="welcome_to_the_fiutur">
         <div class="welcome">
             <div class="welcome_content">
                 <h1> WELCOME TO BORDERLANDS </h1>
@@ -84,7 +84,9 @@
                 <br>
                 <p>Descubre Nuevo Contenido Aquí</p>
                 <br>
-                <button class="boton"><a href="galeria.html">Descubre</a></button>
+                <a href="galeria.html">
+                    <button class="boton">Descubre</button>
+                </a>
             </div>
         </div>
         <div class="ventanaLogin">
@@ -107,7 +109,7 @@
                         <input id="enviarDatosLogin" type="submit" value="Entrar" />
                     </div>
                 </form>
-                <img id="iconoCerrarModalLogin" src="images/close.svg">
+                <img id="iconoCerrarModalLogin" src="images/close.svg" alt="cerrar">
             </div>
         </div>
         <div class="ventanaRegistro">
@@ -141,19 +143,19 @@
                     </div>
                     <div class="errorRegistro" id="errorContrasenaIguales">Las dos contraseñas deben ser iguales</div>
                 </form>
-                <img id="iconoCerrarModalRegistro" src="images/close.svg">
+                <img id="iconoCerrarModalRegistro" src="images/close.svg" alt="cerrar">
             </div>
         </div>
-    </section>
+    </div>
     <!--*************************************-->
     <!--*************************************-->
     <!--*************************************-->
-    <section class="seccion-footer">
+    <div class="seccion-footer">
         <div class="footer"> <a class="footer-link" href="https://opensource.org/licenses/MIT" target="_blank">Copyright</a> <a class="footer-link" href="http://store.steampowered.com/" target="_blank">Steam</a> <a class="footer-link" href="https://www.reddit.com/r/borderlands" target="_blank">Reddit</a>
             <p> Derechos Pertenecientes a Gearbox Software. </p>
         </div>
 
-    </section>
+    </div>
 </body>
 <script>
     var favoritos = document.querySelectorAll(".fav");
